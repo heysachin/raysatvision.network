@@ -1,0 +1,88 @@
+
+@button-padding-v : 16.5px;
+@button-padding-h : 30px;
+.btn-form() {
+    .easing-animation();
+    .font-heading;
+    display     : inline-block;
+    padding     : @button-padding-v @button-padding-h;
+    line-height : 1.2;
+    font-size   : @font-size-h6-s;
+    text-align : center;
+
+    &.fullwidth{
+        width : 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &.btn-small{
+        padding     : @button-padding-v - 6px  @button-padding-h - 10px;
+    }
+
+    .for(2, 5);
+    .-each(@i) {
+       &.btn-size-@{i}{
+            padding: @button-padding-v + @i * 1.5 - 1 @button-padding-h + (@i - 1) * 9
+        }
+    }
+
+    &.btn-size-3{ font-size : @font-size-h6;}
+    &.btn-size-4{ font-size : @font-size-h5;}
+    &.btn-size-5{ font-size : @font-size-h4;}
+}
+
+/* Button output : .btn{-type}.btn-size-{1,2,3,4,5}.btn-{color-array} */
+
+.btn {
+    .btn-form();
+    color         : @light-base;
+    background-color: @gray-darker;
+    border:0; //reset border of button
+    .x-color-full(btn; background-color);
+    &:not(.no-border){
+        border-bottom : 2px solid fade(@gray-base , 20%);
+    }
+
+    &.btn-light{
+        color:@text-color;
+    }
+
+    &.no-border {
+        border-bottom: 0;
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
+    }
+
+    &:hover , &:focus, &:active{
+        background-color : @gray-darker;
+        color:@light-base;
+    }
+
+    &.btn-gray-darker, &.btn-gray-darkest, &.btn-gray-base {
+        &:hover , &:focus, &:active{
+            background-color : @brand-primary;
+            color:@light-base;
+        }
+    }
+
+}
+
+.btn-border {
+    .btn-form();
+    border           : 1px solid @brand-primary;
+    color            : @brand-primary;
+    background-color : transparent;
+    .x-color-full(btn; border-color);
+    .x-color-full(btn; color);
+
+    &:hover , &:focus, &:active {
+        .x-color-full(btn; background-color);
+        background-color : @brand-primary;
+        color: @light-base;
+        &.btn-light{
+            color: @text-color;
+        }
+    }
+
+}

@@ -1,0 +1,134 @@
+.icon, [class^='icon-'], .fa {
+    display        : inline-block;
+    vertical-align : middle;
+
+    &:before {
+        display : block;
+    }
+}
+
+.simple-icon, .circle-icon {
+    color : @brand-primary;
+
+    &:before {
+        .fz-2;
+        text-align : center;
+        float      : left;
+    }
+}
+
+.circle-icon {
+    .icon;
+    color       : @light-base;
+    line-height : 60px;
+
+    &:before {
+        .square(70px);
+        position         : relative;
+        background-color : @brand-primary;
+        line-height      : inherit !important;
+        text-align       : center;
+        border-radius    : 50%;
+        border           : 5px solid fade(@light-base , 40%);
+    }
+
+    .bgc-gray-darker &,.bgc-gray-darkest &,.bgc-gray-dark & {
+        &:before {
+            border-color : fade(@gray-base, 50%);
+        }
+    }
+}
+
+/* Social */
+.social {
+    list-style : none;
+    padding    : 0;
+    .clearfix();
+
+    li {
+        display        : inline-block;
+        vertical-align : middle;
+        margin         : 0 5px;
+
+        &:last-child {
+            margin-right : 0;
+        }
+
+        &:first-child {
+            margin-left : 0;
+        }
+    }
+
+    a {
+        display : block;
+        float   : left;
+    }
+
+    &.circle {
+        li a {
+            display          : block;
+            .square(30px);
+            font-size        : 14px;
+            border-radius    : 50%;
+            text-align       : center;
+            line-height      : 30px;
+            color            : @light-base;
+            background-color : @gray;
+            padding-top      : 2px;
+            padding-left     : 1px;
+
+            &:hover {
+                background : @brand-primary;
+            }
+            .icon, [class^='icon-'], [class^='fa-'] {
+                vertical-align : 0px;
+            }
+        }
+
+        &.responsive {
+            margin-left  : -5px;
+            margin-right : -5px;
+
+            li {
+                margin : 0 5px 15px;
+            }
+        }
+
+        &.gray li a {
+            color            : @gray-darkest;
+            background-color : @gray-light + #222222;
+            &:hover {
+                background-color : @light-base;
+            }
+        }
+
+        &.dark li a {
+            background-color : @gray-base;
+            &:hover {
+                background : @brand-primary;
+            }
+        }
+
+        &.light li a {
+            background-color : @light-base;
+            color            : @text-color;
+            &:hover {
+                background : @brand-primary;
+            }
+        }
+
+        &.primary li a {
+            background-color : @brand-primary;
+            &:hover {
+                background : @gray-base;
+            }
+        }
+
+        &.secondary li a {
+            background-color : @brand-secondary;
+            &:hover {
+                background : @gray-base;
+            }
+        }
+    }
+}

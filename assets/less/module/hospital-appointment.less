@@ -1,0 +1,268 @@
+.appointment-form {
+    .checkbox {
+        font-size : 0;
+        label {
+            display : inline-block;
+            cursor  : pointer;
+
+            input[type="checkbox"], input[type="radio"] {
+                display : none;
+
+                & + span {
+                    > i {
+                        .easing-animation();
+                        display          : inline-block;
+                        position         : absolute;
+                        top              : 5px;
+                        left             : 0;
+                        width            : 20px;
+                        height           : 20px;
+                        border           : 1px solid @gray-border;
+                        background-color : @light-base;
+                        text-align       : center;
+                        font-size        : 12px;
+                        color            : @light-base;
+
+                        &:before {
+                            display     : block;
+                            line-height : 18px;
+                        }
+                    }
+                }
+
+                &:checked + span {
+                    > i {
+                        background-color : @brand-primary;
+                        border-color     : @brand-primary;
+                    }
+                }
+            }
+
+            > span {
+                .clearfix();
+                font-size    : @font-size-h6;
+                position     : relative;
+                display      : inline-block;
+                padding-left : 30px;
+                line-height  : 30px;
+
+                i {
+                    float : left;
+                }
+
+                span {
+                    float   : left;
+                    display : inline-block;
+                }
+            }
+        }
+    }
+
+    .patient-form {
+        .font-heading;
+
+        input {
+            margin-bottom : 0;
+        }
+
+        > div {
+            .clearfix();
+            margin-right : -15px;
+            margin-left  : -15px;
+            > div {
+                width         : 100%;
+                padding-right : 15px;
+                padding-left  : 15px;
+                float         : left;
+                margin-bottom : 20px;
+
+            }
+
+            .__head {
+                line-height : 50px;
+            }
+
+            .select-wrapper {
+
+                .ui-selectmenu-button {
+                    span.ui-icon {
+                        color : @brand-primary;
+                    }
+                }
+            }
+
+        }
+
+        .__nation {
+            .select-wrapper {
+                .select-menu {
+                    max-width : 470px;
+                }
+            }
+        }
+
+        .__name, .__date-of-birth {
+            .__input {
+                position : relative;
+                &:after {
+                    color         : @brand-primary;
+                    font-family   : "megatron";
+                    font-size     : 20px;
+                    position      : absolute;
+                    height        : 20px;
+                    width         : 20px;
+                    line-height   : 1;
+                    margin-top    : auto;
+                    margin-bottom : auto;
+                    top           : 0;
+                    bottom        : 0;
+                    right         : 35px;
+                }
+
+                input {
+                    padding-right : 60px;
+                }
+            }
+        }
+
+        .__name {
+            .select-wrapper {
+                .select-menu {
+                    max-width : 200px;
+                }
+            }
+
+            .__input {
+                &:after {
+                    content : "\e19e";
+                }
+            }
+        }
+
+        .__date-of-birth {
+            .__input {
+                &:after {
+                    content : "\e0a6";
+                }
+            }
+        }
+
+        .__gender {
+            .select-wrapper {
+                .select-menu {
+                    max-width : 170px;
+                }
+            }
+        }
+
+        .__date-of-birth, .__passport, .__telephone, .__mobile {
+            .__input {
+                max-width : 500px;
+            }
+        }
+
+        .__note {
+            .__textarea {
+                font-size: 0;
+            }
+            textarea {
+                font-size: @font-size-h6;
+                height: 280px;
+                margin-bottom :0;
+            }
+        }
+
+        .__note, .__remark {
+            .__textarea {
+                font-size: 0;
+            }
+            textarea {
+                font-size: @font-size-h6;
+                margin-bottom :0;
+            }
+        }
+
+        .__note {
+            textarea {
+                height: 280px;
+            }
+        }
+
+        .__remark {
+            textarea {
+                height: 220px;
+            }
+        }
+
+        @media @md {
+            .__nation, .__name, .__gender, .__date-of-birth, .__passport, .__telephone, .__mobile, .__email, .__doctor, .__remark {
+                .__head {
+                    width : 100% / 4;
+                }
+
+            }
+
+            .__nation {
+                .select-wrapper {
+                    width : 100% * 3 / 4;
+                }
+            }
+
+            .__name {
+                .select-wrapper {
+                    width : 100% / 6;
+                }
+
+                .__input {
+                    width : 100% * 7 / 12;
+                }
+            }
+
+            .__gender {
+                .select-wrapper {
+                    width : 100% / 6;
+                }
+            }
+
+            .__date-of-birth, .__passport, .__telephone, .__mobile, .__email, .__doctor {
+                .__input {
+                    width : 100% * 3 / 4;
+                }
+            }
+
+            .__remark {
+                .__textarea {
+                    width : 100% * 3 / 4;
+                }
+            }
+        }
+
+        @media @lg {
+            .__nation, .__name, .__gender, .__date-of-birth, .__passport, .__telephone, .__mobile, .__email, .__doctor, .__remark {
+                .__head {
+                    width : 100% / 6;
+                }
+
+            }
+
+            .__nation, .__gender {
+                .select-wrapper {
+                    width : 100% * 5 / 6;
+                }
+            }
+
+            .__date-of-birth, .__passport, .__telephone, .__mobile, .__doctor {
+                .__input {
+                    width : 100% * 5 / 6;
+                }
+            }
+
+            .__remark {
+                .__textarea {
+                    width : 100% * 5 / 6;
+                }
+            }
+        }
+    }
+}
+

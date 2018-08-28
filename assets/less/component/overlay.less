@@ -1,0 +1,26 @@
+/* Overlay static */
+.overlay-container{
+    position : relative;
+}
+
+.overlay(){
+    .easing-animation;
+    display : block;
+    .square(100%);
+    position : absolute;
+    top : 0;
+    left : 0;
+    z-index : 512;
+}
+.overlay{
+    .overlay();
+}
+/* Overlay hover */
+.overlay-hover{
+    .overlay;
+    opacity: 0;
+
+    .overlay-container &:hover{
+        opacity: 1;
+    }
+}

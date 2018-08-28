@@ -1,0 +1,310 @@
+.message {
+    position: relative;
+    padding: 10px 40px 10px 50px;
+    border: 1px solid;
+
+    .__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50px;
+
+        i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 15px;
+            line-height: 15px;
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+        }
+    }
+
+    p {
+        font-weight   : 600;
+    }
+
+    .__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40px;
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 8px;
+            line-height: 8px;
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            font-weight: bold;
+
+            &:hover {
+                color: @gray-base;
+            }
+        }
+    }
+
+    &.notice {
+        border-color: #DDDDDD;
+        background-color : #EFF5F7;
+        * {
+            color: @gray;
+        }
+    }
+
+    &.info {
+        border-color: @state-info-border;
+        background-color : @state-info-bg;
+        * {
+            color: @state-info-text;
+        }
+    }
+
+    &.success {
+        border-color: @state-success-border;
+        background-color : @state-success-bg;
+        * {
+            color: @state-success-text;
+        }
+    }
+
+    &.warning {
+        border-color: @state-warning-border;
+        background-color : @state-warning-bg;
+        * {
+            color: @state-warning-text;
+        }
+    }
+
+    &.error {
+        border-color: @state-danger-border;
+        background-color : @state-danger-bg;
+        * {
+            color: @state-danger-text;
+        }
+    }
+}
+
+.messagefull {
+    border: 1px solid;
+    position: relative;
+
+    h6 {
+        margin-bottom : 5px;
+    }
+
+    .__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 8px;
+        line-height: 8px;
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        font-weight: bold;
+
+        &:hover {
+            color: @gray-base;
+        }
+    }
+
+    @media @sm {
+        padding: 16px 40px 12px 110px;
+
+        .__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 110px;
+
+            i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                font-size: 35px;
+                line-height: 35px;
+                display: inline-block;
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+
+    &.notice {
+        border-color: #DDDDDD;
+        background-color : #EFF5F7;
+        * {
+            color: @gray;
+        }
+    }
+
+    &.info {
+        border-color: @state-info-border;
+        background-color : @state-info-bg;
+        * {
+            color: @state-info-text;
+        }
+    }
+
+    &.success {
+        border-color: @state-success-border;
+        background-color : @state-success-bg;
+        * {
+            color: @state-success-text;
+        }
+    }
+
+    &.warning {
+        border-color: @state-warning-border;
+        background-color : @state-warning-bg;
+        * {
+            color: @state-warning-text;
+        }
+    }
+
+    &.error {
+        border-color: @state-danger-border;
+        background-color : @state-danger-bg;
+        * {
+            color: @state-danger-text;
+        }
+    }
+
+    @media @lg {
+        padding-right: 90px;
+    }
+
+    @media @xs-max {
+        padding: 36px 30px 32px;
+        text-align: center;
+
+        h6 {
+            margin-bottom : 15px;
+        }
+    }
+}
+//.messagefull {
+//
+//    .content {
+//        position:relative;
+//        padding:20px 25px 20px 108px;
+//        font-weight:600;
+//
+//        p,
+//        h5,
+//        a,
+//        &:before {
+//            margin-bottom:0;
+//        }
+//
+//        a {
+//            position:absolute;
+//            top:0px;
+//            right:35px;
+//            font-weight:800;
+//            font-size:17px;
+//        }
+//        &:before {
+//            .icon-font-type-2();
+//
+//            position:absolute;
+//            top:50%;
+//            left:0px;
+//            display:inline-block;
+//            width:108px;
+//            content:"\f06a";
+//            text-align:center;
+//            font-size:35px;
+//            transform:translateY(-50%);
+//        }
+//    }
+//
+//    &.error {
+//
+//        .content {
+//            .bgc-main;
+//
+//            p,
+//            h5,
+//            a,
+//            &:before {
+//                .color-light;
+//            }
+//
+//            &:before {
+//                content:"\f06a";
+//            }
+//        }
+//    }
+//
+//    &.warning {
+//
+//        .content {
+//            border:1px solid @color-lightgray - #111111;
+//            background-color:@color-lightgray + #111111;
+//
+//            p,
+//            h5,
+//            a,
+//            &:before {
+//                .color-main;
+//            }
+//
+//            &:before {
+//                .icon-font-type-1();
+//
+//                content:"\i";
+//            }
+//        }
+//    }
+//
+//    &.success {
+//
+//        .content {
+//            border:1px solid @color-lightgray - #111111;
+//            background-color:@color-lightgray + #111111;
+//
+//            &:before {
+//                .icon-font-type-1();
+//
+//                content:"\W";
+//            }
+//        }
+//    }
+//
+//    &.info {
+//
+//        .content {
+//            border:1px solid @color-main;
+//
+//            p,
+//            h5,
+//            a,
+//            &:before {
+//                .color-main;
+//            }
+//
+//            &:before {
+//                .icon-font-type-1();
+//                content:"\e020";
+//            }
+//        }
+//    }
+//}

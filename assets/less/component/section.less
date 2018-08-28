@@ -1,0 +1,149 @@
+
+section{
+    position : relative;
+    overflow: hidden;
+}
+
+.page-section{
+    .clearfix();
+
+    @section-padding-top:90px;
+    @section-padding-bottom:90px;
+    @section-spacing : 40px;
+
+    padding-top : @section-padding-top;
+    padding-bottom : @section-padding-bottom - @section-spacing;
+
+    .section-header{
+        .clearfix;
+        margin-bottom : @section-spacing;
+
+        &.hr-header{
+            margin-bottom : @section-spacing - 10px;
+        }
+    }
+
+    .section-block{
+        margin-bottom : @section-spacing;
+        .clearfix();
+    }
+
+    .section-block-small-p{
+        margin-bottom : @section-spacing - 25px;
+    }
+
+    .section-block-small-margin{
+        margin-bottom: 25px;
+    }
+
+    .section-block-no-margin{
+        margin-bottom: 0px;
+    }
+
+    .section-block-margin-top{
+        margin-top: 40px;
+    }
+
+    &.one-child{
+        padding-bottom : @section-padding-bottom;
+    }
+
+    &.big-padding-bottom{
+        padding-bottom : 90px !important;
+    }
+
+    &.no-padding-bottom{
+        padding-bottom : 0;
+    }
+    
+    &.no-padding-top{
+        padding-top: 0;
+    }
+
+    &.no-padding{
+        padding-top : 0;
+        padding-bottom : 0;
+    }
+
+    &.supper-padding-top{
+        padding-top:120px !important;
+    }
+
+    &.small-padding{
+        @section-padding-top:80px;
+        @section-padding-bottom:80px;
+        @section-spacing : 40px;
+
+        padding-top : @section-padding-top;
+        padding-bottom : @section-padding-bottom - @section-spacing;
+
+        .section-header{
+            margin-bottom : @section-spacing;
+        }
+
+        .section-block{
+            margin-bottom : @section-spacing;
+            .clearfix();
+        }
+
+        .section-block-small-p{
+            margin-bottom : @section-spacing - 25px;
+        }
+
+        &.one-child{
+            padding-bottom : @section-padding-bottom;
+        }
+    }
+
+    &.big-padding{
+        @section-padding-top:120px;
+        @section-padding-bottom:120px;
+        @section-spacing : 40px;
+
+        padding-top : @section-padding-top;
+        padding-bottom : @section-padding-bottom - @section-spacing;
+
+        .section-header{
+            margin-bottom : @section-spacing;
+        }
+
+        .section-block{
+            margin-bottom : @section-spacing;
+            .clearfix();
+        }
+
+        .section-block-small-p{
+            margin-bottom : @section-spacing - 25px;
+        }
+
+        &.one-child{
+            padding-bottom : @section-padding-bottom;
+        }
+    }
+
+    &.supper-padding{
+        @section-padding-top:160px;
+        @section-padding-bottom:160px;
+        @section-spacing : 40px;
+
+        padding-top : @section-padding-top;
+        padding-bottom : @section-padding-bottom - @section-spacing;
+
+        .section-header{
+            margin-bottom : @section-spacing;
+        }
+
+        .section-block{
+            margin-bottom : @section-spacing;
+            .clearfix();
+        }
+
+        .section-block-small-p{
+            margin-bottom : @section-spacing - 25px;
+        }
+
+        &.one-child{
+            padding-bottom : @section-padding-bottom;
+        }
+    }
+}

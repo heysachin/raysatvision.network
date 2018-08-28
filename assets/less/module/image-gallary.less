@@ -1,0 +1,38 @@
+.block-image-zoom {
+    //max-width: 400px;
+    margin-left : auto;
+    margin-right : auto;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        .easing-animation();
+        transform: scale(1);
+    }
+
+    .overlay-hover {
+        .__icon {
+            font-size: 0;
+            width: 22px;
+            height: 22px;
+            position : absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+            i {
+                color: fade(@light-base, 80%);
+                font-size: 22px;
+            }
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.08);
+        }
+    }
+}

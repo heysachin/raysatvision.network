@@ -1,0 +1,59 @@
+.dropup,
+.dropdown {
+    position: relative;
+}
+
+// Prevent the focus on the dropdown toggle when closing dropdowns
+.dropdown-toggle:focus {
+    outline: 0;
+}
+
+// The dropdown menu (ul)
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: @zindex-dropdown;
+    display: none; // none by default, but block on "open" of the menu
+    float: left;
+
+    &.pull-right {
+        right: 0;
+        left: auto;
+    }
+}
+
+// Open state for the dropdown
+.open {
+    // Show the menu
+    > .dropdown-menu {
+        display: block;
+    }
+}
+
+
+.dropdown-menu-right {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-menu-left {
+    left: 0;
+    right: auto;
+}
+
+// Backdrop to catch body clicks on mobile, etc.
+.dropdown-backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: (@zindex-dropdown - 10);
+}
+
+// Right aligned dropdowns
+.pull-right .dropdown-menu {
+    right: 0;
+    left: auto;
+}

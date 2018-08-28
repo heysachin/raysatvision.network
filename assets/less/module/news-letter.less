@@ -1,0 +1,99 @@
+.news-letter {
+    .__content-wrapper {
+        .btn-border.fullwidth {
+            letter-spacing: 2px;
+        }
+
+        .__content-left {
+            p {
+                letter-spacing: 0.1em;
+            }
+        }
+        
+        .__content-right {
+            form {
+
+                input {
+                    background-color : transparent;
+                    &::-webkit-input-placeholder {
+                        color: @light-base;
+                    }
+                    &::-moz-placeholder {
+                        color: @light-base;
+                    }
+                    &:-moz-placeholder {   /* Older versions of Firefox */
+                        color: @light-base;
+                    }
+                    &:-ms-input-placeholder {
+                        color: @light-base;
+                    }
+                }
+
+                .bgc-light & {
+                    input {
+                        &::-webkit-input-placeholder {
+                            color: @gray-dark;
+                        }
+                        &::-moz-placeholder {
+                            color: @gray-dark;
+                        }
+                        &:-moz-placeholder {   /* Older versions of Firefox */
+                            color: @gray-dark;
+                        }
+                        &:-ms-input-placeholder {
+                            color: @gray-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media @md {
+        &.size-large {
+            .__content-wrapper {
+                height: 350px;
+            }
+        }
+
+        .__content-wrapper {
+            height: 220px;
+
+            .__content-left, .__content-right {
+                height: 100%;
+            }
+
+            .__content-right {
+                form {
+                    padding-right: 140px;
+                    position: relative;
+
+                    input {
+                        margin-bottom : 0;
+                    }
+
+                    .btn {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media @sm-max {
+        .__content-wrapper {
+            text-align: center;
+
+            .__content-left {
+                padding-top : 40px;
+                padding-bottom: 40px;
+            }
+
+            .__content-right {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.team {
+    .block-team {
+        .__image {
+            margin-bottom : 32px;
+            > div {
+                overflow: hidden;
+            }
+
+            img {
+                width: 100%;
+                transform: scale(1);
+                .easing-animation();
+            }
+        }
+
+        .__info {
+            text-align: center;
+            .__name{
+                margin-bottom : 5px;
+            }
+            .__role{
+                margin-bottom : 10px;
+            }
+            .__text{}
+            .social{}
+        }
+
+        &:hover {
+            .__image {
+                img {
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+
+    @media @sm {
+        &.team-horizontal {
+            .block-team {
+                .clearfix;
+                margin-right: -15px;
+                margin-left: -15px;
+
+                > div {
+                    width: 50%;
+                    float: left;
+                    padding-left : 15px;
+                    padding-right : 15px;
+                }
+
+                .__image {
+                    margin-bottom : 0px;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .__info {
+                    text-align: left;
+                    .__name{
+                        margin-bottom : 5px;
+                    }
+                    .__role{
+                        margin-bottom : 10px;
+                    }
+                    .__text{}
+                    .social{}
+                }
+            }
+        }
+    }
+}
+
+// Hospital
+.block-team-2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+
+    .__image {
+        position: relative;
+        margin-bottom :22px;
+
+        img {
+            width: 100%;
+            .easing-animation();
+            opacity: 1;
+        }
+
+        .social {
+            .easing-animation();
+            opacity: 0;
+            transform: translateX(-40px);
+            position: absolute;
+            width: 30px;
+            left: 0;
+            bottom: 20px;
+            li {
+                margin: 10px 0;
+            }
+        }
+
+        &:hover {
+            img {
+                opacity: 0.6;
+            }
+
+            .social {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    .__block {
+        text-align: center;
+
+        .__name {
+            .font-heading;
+            font-size: @font-size-h4;
+        }
+
+        .__role {
+            .font-serif-italic;
+            font-size: @font-size-h6;
+        }
+    }
+}

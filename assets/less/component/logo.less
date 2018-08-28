@@ -1,0 +1,133 @@
+/* Megatron branding */
+
+.megatron {
+    .clearfix();
+    position       : relative;
+    display        : inline-block;
+    vertical-align : middle;
+
+    &:hover, a:hover {
+        color : inherit;
+    }
+
+    .logo {
+        width   : 100%;
+        display : block;
+        margin  : 0 auto 10px;
+        .square(50px);
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        svg {
+            position   : relative;
+            display    : block;
+            max-width  : 100%;
+            max-height : 100%;
+        }
+
+        path {
+            fill : @brand-primary;
+        }
+    }
+
+    &.logo-light .logo path {
+        fill : @light-base;
+    }
+
+    &.logo-dark .logo path {
+        fill : @gray-dark;
+    }
+
+    .brand {
+        .font-heading;
+        font-size      : @font-size-h6-s;
+        line-height    : 1;
+        letter-spacing : 0.08em;
+        text-align     : center;
+    }
+
+    &.inline {
+        .logo, .brand {
+            vertical-align : middle;
+            display        : inline-block;
+        }
+        .logo {
+            .square(40px);
+            margin-bottom : 0;
+        }
+        .brand {
+            font-size : @font-size-h3;
+
+            &.fz-3-l {
+                font-size : @font-size-h3-l;
+            }
+        }
+    }
+
+    &.size-2 {
+        .logo {
+            .square(80px);
+        }
+
+        .brand {
+            font-size : @font-size-h3;
+        }
+
+        &.inline {
+            .logo {
+                .square(50px)
+            }
+            .brand {
+                font-size : @font-size-h2 - 4px;
+            }
+        }
+    }
+
+    &.size-3 {
+        .logo {
+            .square(150px);
+        }
+
+        .brand {
+            font-size : @font-size-h2 - 4px;;
+        }
+
+        &.inline {
+            .logo {
+                .square(86px)
+            }
+            .brand {
+                font-size : @font-size-h2;
+            }
+        }
+
+        @media (max-width : 1620px) {
+            .logo {
+                .square(120px);
+            }
+        }
+    }
+
+    &.size-4 {
+        .logo {
+            .square(120px);
+        }
+
+        .brand {
+            font-size : @font-size-h2 - 4px;;
+        }
+
+        &.inline {
+            .logo {
+                .square(86px)
+            }
+            .brand {
+                font-size : @font-size-h2;
+            }
+        }
+    }
+}
+

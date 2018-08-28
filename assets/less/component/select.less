@@ -1,0 +1,107 @@
+.select-wrapper {
+    font-size : 0;
+
+    .select-menu {
+        width : 100%;
+    }
+
+    .ui-selectmenu-button {
+        .font-heading;
+        font-size   : @font-size-h6;
+        display     : inline-block;
+        overflow    : hidden;
+        position    : relative;
+        cursor      : pointer;
+        border      : 1px solid @gray-border;
+        line-height : 30px;
+
+        span.ui-icon {
+            position    : absolute;
+            top         : 50%;
+            transform   : translateY(-50%);
+            right       : 15px;
+            display     : block;
+            width       : 10px;
+            height      : 10px;
+            line-height : 10px;
+            font-size   : 10px;
+        }
+
+        span.ui-selectmenu-text {
+            text-align    : left;
+            padding       : 9px 40px 9px 20px;
+            display       : block;
+            overflow      : hidden;
+            text-overflow : ellipsis;
+            white-space   : nowrap;
+        }
+    }
+
+    &.__small {
+        .ui-selectmenu-button {
+            font-size : @font-size-h6-s;
+            span.ui-selectmenu-text {
+                padding : 4px 40px 4px 20px;
+            }
+        }
+    }
+}
+
+.ui-selectmenu-menu {
+    z-index     : 800;
+    padding     : 0;
+    margin      : 0;
+    position    : absolute;
+    top         : 0;
+    left        : 0;
+    display     : none;
+    line-height : 30px;
+
+    > .ui-menu {
+        .font-heading;
+        padding          : 0;
+        margin           : 0;
+        display          : block;
+        outline          : none;
+        overflow         : auto;
+        /* Support: IE7 */
+        overflow-x       : hidden;
+        border           : 1px solid @gray-border;
+        background-color : @light-base;
+
+        > .ui-menu-item {
+            margin-bottom : 0;
+            padding       : 5px 20px;
+
+            &:not(.ui-state-disabled) {
+                cursor : pointer;
+            }
+            //.easing-animation();
+
+            &:not(.ui-state-disabled):hover, &:not(.ui-state-disabled).ui-state-focus {
+                background-color : @brand-primary;
+                color            : @light-base;
+            }
+
+            &.ui-state-disabled {
+                color: @gray-light;
+            }
+        }
+
+        .ui-menu {
+            position : absolute;
+        }
+
+        .ui-selectmenu-optgroup {
+            //font-size   : 1em;
+        }
+
+        &.__small {
+            font-size : @font-size-h6-s;
+        }
+    }
+
+    &.ui-selectmenu-open {
+        display : block;
+    }
+}

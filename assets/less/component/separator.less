@@ -1,0 +1,14 @@
+hr{
+    .for(1,12 );
+    .-each(@i) {
+        &.hr-@{i}{
+            border-top-width : @i * 1px;
+        }
+    }
+    .x-color-full(hr , border-top-color);
+
+    &.no-margin {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

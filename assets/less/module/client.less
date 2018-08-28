@@ -1,0 +1,123 @@
+.group-brand-logo {
+    ul {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    li {
+        float: left;
+        width: 100% / 3;
+        font-size: 0;
+
+        > a {
+            display: inline-block;
+        }
+    }
+
+    @media (max-width:600px) {
+        li {
+            width: 100%;
+        }
+    }
+}
+
+.client-section-2 {
+    @media @lg {
+
+        .__header {
+            padding-top: 50px;
+        }
+    }
+}
+
+.client-section-parallax {
+    display: flex;
+    > div {
+        flex-basis: 50%;
+    }
+
+    .__block-wrapper-1 {
+        padding-top: 110px;
+        padding-bottom: 70px;
+
+        .group-brand-logo {
+            max-width: 771px;
+            width: 100%;
+            margin-right : auto;
+            margin-left: auto;
+            ul {
+                margin: 0;
+            }
+        }
+    }
+
+    .__block-wrapper-2 {
+        display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+        align-items: center;
+        justify-content: center;
+        .__block {
+            max-width: 620px;
+            width: 100%;
+        }
+    }
+
+    @media @md-max {
+        flex-wrap: wrap;
+        .__block-wrapper-1, .__block-wrapper-2 {
+            flex-grow  : 1;
+            flex-basis : auto;
+        }
+        .__block-wrapper-1 {
+            order: 2;
+        }
+
+        .__block-wrapper-2 {
+            order: 1;
+            padding-top: 90px;
+            padding-bottom: 80px;
+        }
+    }
+}
+
+// Brand Carousel
+.brand-carousel {
+    .__item {
+        .__image {
+            font-size: 0;
+
+            > a {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.brand-carousel-border {
+    border: 1px solid @gray-lighter;
+    .__item {
+        .__image {
+            border-right: 1px solid @gray-lighter;
+            height: 140px;
+            font-size: 0;
+
+            > a {
+                line-height: 138px;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+
+/* Convenient spacing */
+
+&{
+    .for(0, 20);
+    .-each(@i) {
+        @j : @i * 5;
+        .mt-@{j},.children-mt-@{j} > *{
+            margin-top : @j * 1px;
+        }
+        .ml-@{j},.children-ml-@{j} > *{
+            margin-left : @j * 1px;
+        }
+        .mr-@{j},.children-mr-@{j} > *{
+            margin-right : @j * 1px;
+        }
+        .mb-@{j},.children-mb-@{j} > *{
+            margin-bottom : @j * 1px;
+        }
+
+        .pt-@{j},.children-pt-@{j} > *{
+            padding-top : @j * 1px;
+        }
+        .pl-@{j},.children-pl-@{j} > *{
+            padding-left : @j * 1px;
+        }
+        .pr-@{j},.children-pr-@{j} > *{
+            padding-right : @j * 1px;
+        }
+        .pb-@{j},.children-pb-@{j} > *{
+            padding-bottom : @j * 1px;
+        }
+    }
+}

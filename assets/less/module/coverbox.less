@@ -1,0 +1,71 @@
+.cover-box {
+    display: block;
+    float: left;
+    position: relative;
+    .easing-animation();
+
+    &.normal-style {
+        .cover-box-content {
+            display: block;
+        }
+    }
+
+    &:not(.normal-style) {
+        .cover-box-content {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            .square(100%);
+        }
+    }
+}
+
+.cover-box-container {
+    overflow: hidden;
+    position: relative;
+}
+
+// Cover Box (Short Code)
+.cover-box-container {
+    .cover-box {
+        background-color: @light-base;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .cover-box-content {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .content-wrapper {
+
+                h4 {
+                    line-height: 1.2;
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    margin-bottom: 22px;
+                }
+            }
+        }
+    }
+
+    @media @xs-max {
+
+        .cover-box {
+
+            > div {
+                margin-right:auto;
+                margin-left:auto;
+                max-width:500px;
+            }
+
+            .content-wrapper {
+                padding-top:45px;
+                padding-bottom:45px;
+            }
+        }
+    }
+}

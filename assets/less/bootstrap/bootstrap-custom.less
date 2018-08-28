@@ -1,0 +1,37 @@
+@screen-xlg-min: 1400px;
+@xlg-gutter: 40px;
+@xlg-container: 1320px;
+
+@media (min-width : @screen-xlg-min) {
+    .ex-layout {
+        .container {
+            width : @xlg-container;
+        }
+
+        .container:not(.remove-col-padding),
+        .container-fluid:not(.remove-col-padding)
+        [class*='col-'] {
+            padding-left  : @xlg-gutter / 2;
+            padding-right : @xlg-gutter / 2;
+        }
+
+        .row {
+            margin-left  : -@xlg-gutter / 2;
+            margin-right : -@xlg-gutter / 2;
+        }
+    }
+}
+
+// Add to .container or "col" parent class
+.remove-col-gutter {
+    [class*='col-'] ,.row{
+        padding-left  : 0;
+        padding-right : 0;
+    }
+}
+
+// Add to "col-"
+.col-no-gutter ,.remove-gutter{
+    padding-left  : 0;
+    padding-right : 0;
+}

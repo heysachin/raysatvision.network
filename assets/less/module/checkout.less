@@ -1,0 +1,382 @@
+.checkout-login, .checkout-coupon {
+    .__header {
+        padding: 9px 20px;
+        border: 1px solid @gray-border;
+        background-color : #F9F9F9;
+        letter-spacing: 0.05em;
+
+        span {
+            margin-right: 5px;
+        }
+
+        a {
+            color: @brand-primary;
+
+            &:hover {
+                color: @gray-dark;
+            }
+        }
+    }
+}
+
+.checkout-coupon {
+    .__content {
+        padding-top : 35px;
+        
+        .__button {
+            .btn {
+                max-width: 180px;
+            }
+        }
+    }
+    
+    @media @sm {
+        .__content {
+            margin-right : -15px;
+            margin-left : -15px;
+
+            > div {
+                float: left;
+                padding-left : 15px;
+                padding-right : 15px;
+            }
+
+            .__input {
+                width: 75%;
+            }
+
+            .__button {
+                padding-left: 5px;
+                width: 25%;
+                .btn {
+                    max-width: 180px;
+                }
+            }
+        }
+    }
+}
+
+.checkout-login {
+    .__content {
+        padding-top : 30px;
+
+        p {
+            margin-bottom : 55px;
+        }
+
+        .__inputs {
+            span {
+                display: block;
+            }
+        }
+
+        .__button {
+            .btn {
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+
+    @media @sm {
+        .__content {
+            .__inputs {
+                margin-right: -15px;
+                margin-left : -15px;
+
+                span {
+                    width: 50%;
+                    padding-left : 15px;
+                    padding-right : 15px;
+                    float: left;
+                }
+            }
+        }
+    }
+
+    @media @lg {
+        .__content {
+            .__inputs {
+                margin-right: 0px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.checkout-customer_detail {
+    .__title {
+        line-height: 30px;
+    }
+
+    .__inputs {
+        .__item {
+            .clearfix;
+            margin-left   : -15px;
+            margin-right: -15px;
+
+            > span {
+                display       : block;
+                padding-left  : 15px;
+                padding-right : 15px;
+            }
+
+            &.item-2-col {
+                > span {
+                    float : left;
+                    width : 50%;
+                }
+            }
+        }
+    }
+
+    .checkbox {
+        font-size : 0;
+
+        label {
+            display : inline-block;
+            cursor  : pointer;
+
+            input[type="checkbox"] {
+                display : none;
+
+                & + span {
+                    > i {
+                        .easing-animation();
+                        display          : inline-block;
+                        position         : absolute;
+                        top              : 50%;
+                        left             : 0;
+                        transform        : translateY(-50%);
+                        width            : 14px;
+                        height           : 14px;
+                        border           : 1px solid @gray-border;
+                        background-color : @light-base;
+                        text-align       : center;
+                        font-size        : 8px;
+                        color            : @light-base;
+
+                        &:before {
+                            display: block;
+                            line-height      : 12px;
+                        }
+                    }
+                }
+
+                &:checked + span {
+                    > i {
+                        color : @brand-primary;
+                    }
+                }
+            }
+
+            > span {
+                .clearfix();
+                font-size    : @font-size-h6;
+                position     : relative;
+                display      : inline-block;
+                padding-left : 20px;
+                line-height  : 30px;
+
+                i {
+                    float : left;
+                }
+
+                span {
+                    float   : left;
+                    display : inline-block;
+                }
+            }
+        }
+    }
+
+    .__message {
+        textarea {
+            height : 150px;
+        }
+    }
+
+    @media @lg {
+        .__inputs {
+            .__item {
+                margin-right: 0px;
+                padding-right : 5px;
+            }
+        }
+    }
+
+    @media @xs-max {
+        .__inputs {
+            .__item {
+                &.item-2-col span {
+                    width : 100%;
+                }
+            }
+        }
+    }
+}
+
+.checkout-form .shop-cart-total {
+
+    h4 {
+        font-size: @font-size-h6;
+    }
+
+    .__sub-total, .__shipping, .__order-total {
+
+        h6 {
+            .fz-6-s;
+        }
+
+        > span {
+            .fz-6-s;
+        }
+    }
+
+    .__total {
+        .clearfix;
+        padding-top    : 15px;
+        padding-bottom : 15px;
+
+        * {
+            line-height : 46px;
+        }
+
+        h4 {
+        }
+
+        span.price {
+            .fz-6;
+        }
+    }
+}
+
+.checkout-payment {
+    .clearfix;
+
+    .__title {
+        font-size : 0;
+
+        label {
+            cursor  : pointer;
+            display : inline-block;
+
+            input[type="radio"] {
+                display : none;
+
+                & + span {
+                    i.radio-button {
+                        .easing-animation();
+                        display          : inline-block;
+                        width            : 16px;
+                        height           : 16px;
+                        border-radius    : 50%;
+                        position         : absolute;
+                        left             : 15px;
+                        top              : 50%;
+                        transform        : translateY(-50%);
+                        border           : 3px solid @light-base;
+                        box-shadow       : 0 0 0 1px @gray-border;
+                        background-color : @light-base;
+                    }
+                }
+
+                &:checked + span {
+                    i.radio-button {
+                        background-color : @brand-primary;
+                    }
+                }
+            }
+
+            > span {
+                .clearfix();
+                font-size    : @font-size-h6;
+                position     : relative;
+                display      : inline-block;
+                padding-left : 48px;
+                line-height  : 30px;
+
+                i {
+                    float : left;
+                }
+
+                span {
+                    float   : left;
+                    .font-heading;
+                    display : inline-block;
+                }
+            }
+        }
+    }
+
+    > div {
+        border : 1px solid @gray-border;
+
+        &:not(:first-of-type) {
+            border-top : 0;
+        }
+    }
+
+    .bank-transfer {
+        padding : 20px 0;
+
+        .__title {
+            margin-bottom : 10px;
+        }
+
+        .__content {
+            padding-left  : 48px;
+            padding-right : 48px;
+            p {
+                letter-spacing : 0.05em;
+            }
+        }
+    }
+
+    .cheque-payment {
+        padding : 25px 0;
+    }
+
+    .paypal {
+        padding : 25px 0;
+
+        .__title {
+            label > span {
+                span {
+                    img {
+                        margin-left : 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media @sm-max {
+    }
+
+    @media (max-width : @screen-xs) {
+        .paypal {
+            .__title {
+                label > span {
+                    span {
+                        img {
+                            display : none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.checkout-form .__submit {
+    .btn {
+        letter-spacing: 0.1em;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    @media @sm-max {
+        text-align: center;
+    }
+}
+

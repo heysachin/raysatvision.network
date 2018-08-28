@@ -1,0 +1,65 @@
+.parallax-wrapper{
+    position : relative;
+    overflow: hidden;
+}
+
+.background-form(){
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    left : 0;
+    top : 0;
+    z-index: -2;
+}
+
+.parallax-background{
+    .background-form();
+    background-size : cover;
+    background-repeat : repeat-y;
+    background-position-x :center;
+    background-attachment : scroll;
+
+    html.chrome:not(.parallax-on) &{
+        height : 120%;
+        top : -10%;
+    }
+
+    html:not(.parallax-on) &{
+        background-attachment : fixed;
+    }
+
+    .parallax-minor{
+        transition: all 0s;
+    }
+}
+.backgroud-wrapper{
+    position : relative;
+}
+
+.static-background{
+    .background-form();
+    background-size : cover;
+    background-position : 50% 50%;
+}
+
+.video-background{
+    .background-form();
+    overflow: hidden;
+
+    .video-background-inner{
+        .ab-center;
+        overflow: hidden;
+        width : 1920px;
+        height: 1080px;
+        padding-bottom : 100% * 9 /16;
+
+        iframe{
+            position: absolute;
+            border:0;
+            left : 0;
+            top : 0;
+            width : 100%;
+            height: 100%;
+        }
+    }
+}

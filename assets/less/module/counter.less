@@ -1,0 +1,44 @@
+.counter-group {
+    .block-counter {
+        .__icon {
+            font-size: 34px;
+            line-height: 1;
+            height: 34px;
+            margin-bottom : 35px;
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+
+                &.icon-traget {
+                    font-size: 42px;
+                    height: 42px;
+                    width: 42px;
+                }
+
+                &.icon-bike {
+                    font-size: 56px;
+                    height: 56px;
+                    width: 56px;
+                }
+            }
+        }
+
+        .timer {
+            font-size: @font-size-h1 - 5px;
+            font-weight: 400;
+            &.hr-heading:after {
+                margin-top : 15px;
+            }
+        }
+
+        p {
+            letter-spacing: 2px;
+        }
+    }
+}

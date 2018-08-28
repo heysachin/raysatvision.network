@@ -1,0 +1,106 @@
+ul,ol{
+    list-style: none;
+    li{
+        margin-bottom : 10px;
+    }
+}
+
+ol{
+    counter-reset: ol-counter;
+    list-style: none;
+    li{
+        &:before{
+            .font-heading;
+            content: counter(ol-counter) ".";
+            counter-increment: ol-counter;
+            margin-right : 8px;
+            font-size : 90%;
+        }
+    }
+    .x-color-child(list, color, ~"li:before",@brand-title-array, @brand-color-array);
+
+    &.style-2{
+        li:before{
+            display : inline-block;
+            content: counter(ol-counter);
+            color : @light-base;
+            .square(30px);
+            line-height : 30px;
+            text-align : center;
+            background-color : @gray-darker;
+            border-radius : 50%;
+        }
+        .x-color-child(list, background-color, ~"li:before",@brand-title-array, @brand-color-array);
+    }
+}
+
+ul{
+    &.list-icon{
+        li{
+            display : block;
+            margin-bottom : 10px;
+            i{
+                .fz-6-ss;
+                margin-right : 8px;
+            }
+        }
+        &.list-primary li i{
+            color : @brand-primary;
+        }
+        &.list-secondary li i{
+            color : @brand-secondary;
+        }
+        &.list-success li i{
+            color : @brand-success;
+        }
+        &.list-info li i{
+            color : @brand-info;
+        }
+        &.list-warning li i{
+            color : @brand-warning;
+        }
+        &.list-danger li i{
+            color : @brand-danger;
+        }
+    }
+
+    &.list-disc, &.list-square, &.list-arrow{
+        li:before{
+            .font-content;
+            margin-right : 8px;
+        }
+        &.list-primary li:before{
+            color : @brand-primary;
+        }
+        &.list-secondary li:before{
+            color : @brand-secondary;
+        }
+        &.list-success li:before{
+            color : @brand-success;
+        }
+        &.list-info li:before{
+            color : @brand-info;
+        }
+        &.list-warning li:before{
+            color : @brand-warning;
+        }
+        &.list-danger li:before{
+            color : @brand-danger;
+        }
+    }
+    &.list-disc, &.list-square, &.list-arrow{
+
+    }
+
+    &.list-disc li:before{
+        content: "\25CF";
+    }
+    &.list-square li:before{
+        content: "\25A0";
+    }
+    &.list-arrow li:before{
+        content: "\276F";
+    }
+
+
+}

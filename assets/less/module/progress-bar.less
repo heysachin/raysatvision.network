@@ -1,0 +1,146 @@
+.block-progressbar {
+    position      : relative;
+    width         : 100%;
+    margin-bottom : 20px;
+    z-index       : 10;
+    .__title {
+        margin-bottom : 10px;
+        line-height   : @line-height-base;
+    }
+
+    .progressbar {
+        .easing-animation-long();
+        background-color : @brand-primary;
+        width            : 0;
+    }
+
+    .progressbar-back-text,
+    .progressbar-front-text {
+        display : none;
+    }
+
+    // basic and tooltip style
+
+    .progressbar {
+        background-color : @brand-primary;
+        .x-color-parent(progressbar; background-color; @brand-title-array; @brand-color-array);
+        height           : 9px;
+        width            : 0;
+
+        &:before {
+            content          : '';
+            bottom           : 0;
+            position         : absolute;
+            display          : block;
+            width            : 100%;
+            height           : 9px;
+            background-color : @gray-lighter;
+            z-index          : -1;
+            .trail-light &{
+                background-color : @light-base;
+            }
+        }
+    }
+
+    &.basic {
+        .progressbar {
+            position : static;
+        }
+    }
+
+    .style-tooltip &{
+        margin-bottom : 40px;
+        position      : relative;
+        .progressbar {
+            position : absolute;
+        }
+
+        .progressbar-back-text {
+            position         : absolute;
+            display          : block;
+            width            : 100%;
+            height           : 9px;
+            bottom           : -19px;
+            font-size        : 0;
+            background-color : @gray-lighter ;
+            z-index          : -1;
+        }
+        
+
+
+        .progressbar-front-text {
+            position         : absolute;
+            display          : block;
+            right            : -25px;
+            bottom           : 28px;
+            line-height      : 1;
+            .font-heading;
+            height           : 23px;
+            text-align       : center;
+            max-width        : 50px;
+            padding          : 5px;
+            border-radius    : 3px;
+            color            : @light-base;
+            background-color : @gray-dark;
+
+            &:before {
+                content            : "";
+                position           : absolute;
+                bottom             : -10px;
+                left               : 20px;
+                border-left-width  : 4px;
+                border-right-width : 4px;
+                border-top-width   : 7px;
+                border-style       : solid;
+                border-color       : transparent;
+                border-top-color   : @gray-dark;
+                display            : block;
+                width              : 0;
+                height             : 0;
+            }
+        }
+    }
+
+    .trail-light.style-tooltip & .progressbar-back-text{
+        background-color : @light-base;
+    }
+    &.vertical {
+        position : relative;
+        height: 250px;
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 80px;
+        background-color : @gray-lighter;
+
+        .trail-light &{
+            background-color : @light-base;
+        }
+
+        .__title {
+            display: block;
+            position: absolute;
+            bottom: -50px;
+            .font-heading;
+        }
+
+        .progressbar {
+            height: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progressbar-back-text {
+            display: block;
+            position: absolute;
+            max-height: 20px;
+            bottom: -50px;
+            line-height: 30px !important;
+            color: @brand-primary;
+            .x-color-parent(progressbar; color; @brand-title-array; @brand-color-array);
+            .font-heading;
+        }
+
+    }
+}

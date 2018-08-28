@@ -1,0 +1,27 @@
+{
+  "name": "chaffle",
+  "main": [],
+  "ignore": [
+    ".*"
+  ],
+  "devDependencies": {
+    "cooker": "~0.4.8"
+  },
+  "exportsOverride": {
+    "cooker": {
+      "css": "dist/css/",
+      "less": "dist/less/"
+    }
+  },
+  "homepage": "https://github.com/blivesta/chaffle",
+  "_release": "12deecccdc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "12deecccdc4ac375d577351c83033f012bc53e4f"
+  },
+  "_source": "git://github.com/blivesta/chaffle.git",
+  "_target": "*",
+  "_originalSource": "blivesta/chaffle",
+  "_direct": true
+}

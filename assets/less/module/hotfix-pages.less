@@ -1,0 +1,86 @@
+.underconstruction-container{
+    padding-bottom : 40px;
+    .__icon{
+        font-size : 60px;
+        color: @brand-primary;
+    }
+    
+    .__title{
+        font-size : 40px;
+    }
+    
+    .__caption{
+        font-size : 24px;
+        margin-bottom : 35px;
+    }
+}
+
+.about-skill-container{
+    max-width: 700px;
+    padding: 100px 60px 80px;
+
+    @media @md-max{
+        float : none;
+        .center-block();
+    }
+}
+
+.aa-menu-friendly{
+    position : relative;
+
+    .__image{
+
+    }
+
+    .__content{
+
+    }
+
+    @media @lg {
+        .__content{
+            position : absolute;
+            width : 100%;
+            height : 100%;
+            left : 0;
+            top : 0;
+        }
+    }
+
+
+    h2{
+        line-height : 1.6;
+    }
+}
+
+.homepage-leftmenu{
+
+    @media (min-width: 1530px) {
+        padding-left : 300px;
+
+        .mobile-nav {
+            transition: transform 0s;
+            transform : translateX(0);
+
+            .megatron{  
+                .center-block;
+                width : 190px;
+            }
+        }
+
+        .mobile-nav-toggle{
+            display : none;
+        }
+
+        .left-menu-top-nav{
+            display : none!important;
+        }
+    }
+}
+
+.underconstruction-section .cell-vertical-wrapper{
+    min-height: ~"calc(100vh - 173px)";
+    padding: 60px 0;
+}
+
+
+

@@ -1,0 +1,128 @@
+.accordion {
+    .accordion-header {
+        cursor           : pointer;
+        border           : 1px solid @gray-border;
+        padding-top      : 15px;
+        padding-bottom   : 15px;
+        padding-right    : 20px;
+        padding-left     : 60px;
+        position         : relative;
+        min-height       : 0;
+        background-color : @light-base;
+
+        &:not(:first-of-type) {
+            margin-top : 20px;
+        }
+
+        .__icon {
+            position : absolute;
+            top      : 0;
+            left     : 0;
+            width    : 60px;
+            height   : 100%;
+
+            i {
+                position    : absolute;
+                width       : 14px;
+                height      : 14px;
+                line-height : 14px;
+                display     : block;
+                font-size   : 14px;
+                top         : 0;
+                left        : 0;
+                bottom      : 0;
+                right       : 0;
+                margin      : auto;
+
+                &:before {
+                    content: "\e169";
+                    font-style: normal;
+                    font-family: "megatron";
+                }
+            }
+        }
+
+        &.ui-state-active {
+            i:before {
+                content: "\e0d9";
+            }
+        }
+    }
+
+    .accordion-content {
+        background-color : @light-base;
+        border           : 1px solid @gray-border;
+        border-top       : 0;
+        padding          : 20px 30px;
+        overflow         : auto;
+    }
+
+    &.highlight-caret {
+        .accordion-header {
+            padding-left : 80px;
+
+            .__icon {
+                background-color : @gray-lighter;
+                outline          : transparent solid 1px;
+                .easing-animation();
+            }
+
+            &.ui-state-active {
+                .__icon {
+                    outline          : @gray-dark solid 1px;
+                    background-color : @gray-dark;
+                    color            : @light-base;
+                }
+            }
+        }
+
+        &.inverse {
+            .accordion-header {
+                .__icon {
+                    outline          : @gray-dark solid 1px;
+                    background-color : @gray-dark;
+                    color            : @light-base;
+                }
+
+                &.ui-state-active {
+                    .__icon {
+                        background-color : @gray-lighter;
+                        outline          : transparent solid 1px;
+                        color            : @gray-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    &.highlight-heading {
+        .accordion-header {
+            .easing-animation();
+
+            &.ui-state-active {
+                background-color : @gray-dark;
+                color            : @light-base;
+            }
+        }
+    }
+
+    &.transparent {
+        .accordion-header {
+            border-color     : @light-base;
+            background-color : transparent;
+            color            : @light-base;
+        }
+
+        .accordion-content {
+            border-color     : @light-base;
+            background-color : transparent;
+            color            : @light-base;
+        }
+
+        &.caret-primary {
+            .__icon {
+                color : @brand-primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+.call-to-action {
+    .__content {
+        padding-left  : 15px;
+        padding-right : 15px;
+
+        .__button {
+            a.btn-border, a.btn {
+                letter-spacing : 3px;
+            }
+
+            a.btn-border {
+                padding-right : 18px;
+                padding-left  : 18px;
+                border-width  : 2px;
+            }
+
+            a.btn {
+                padding-left  : 20px;
+                padding-right : 20px;
+                padding-top   : 17px;
+            }
+        }
+    }
+
+    &.style-1, &.style-3 {
+        border : 2px solid fade(@gray-base , 20%);
+        .__content {
+
+            *:not(.btn-border) {
+                color : @light-base;
+            }
+        }
+    }
+
+    &.style-1 {
+        background-color : @brand-primary;
+    }
+
+    &.style-2 {
+        border : 3px solid shade(@brand-primary, 20%);
+    }
+
+    &.style-3 {
+        background-color : @brand-secondary;
+    }
+
+    @media @md {
+        .__content {
+            position : relative;
+            height   : 150px;
+
+            .__icon {
+                position : absolute;
+                top      : 0;
+                left     : 0;
+                bottom   : 0;
+
+                i {
+                    position    : absolute;
+                    top         : 0;
+                    left        : 0;
+                    right       : 0;
+                    bottom      : 0;
+                    margin      : auto;
+                    font-size   : 65px;
+                    line-height : 65px;
+                    display     : inline-block;
+                    height      : 65px;
+                    width       : 65px;
+                }
+            }
+
+            .__button {
+                position : absolute;
+                top      : 0;
+                right    : 0;
+                height   : 100%;
+                width    : 285px;
+
+                > div {
+                    position      : absolute;
+                    top           : 0;
+                    right         : 0;
+                    bottom        : 0;
+                    height        : 120px;
+                    margin-top    : auto;
+                    margin-bottom : auto;
+                    line-height   : 120px;
+                }
+            }
+        }
+
+        &.style-1, &.style-3 {
+            .__content {
+                padding-right : 298px;
+                padding-left  : 146px;
+
+                .__icon {
+                    width : 146px;
+                }
+
+                .__button {
+                    > div {
+                        padding-right : 55px;
+                    }
+                }
+            }
+        }
+
+        &.style-2 {
+            .__content {
+                padding-right : 297px;
+                padding-left  : 145px;
+
+                .__icon {
+                    width : 145px;
+                }
+
+                .__button {
+                    > div {
+                        padding-right : 54px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media @sm-max {
+        .__content {
+            text-align     : center;
+            padding-top    : 50px;
+            padding-bottom : 50px;
+
+            .__button {
+                padding-top : 30px;
+            }
+        }
+    }
+}
+
+// Call to action parallax
+.call-to-action-parallax {
+    padding-top    : 150px;
+    padding-bottom : 170px;
+
+    p {
+        letter-spacing : 2px;
+    }
+
+    .__button {
+        .btn, .btn-border {
+            max-width      : 200px;
+            letter-spacing : 2px;
+        }
+
+        .btn {
+            margin-right : 30px;
+        }
+    }
+
+    @media @xs-max {
+        padding-top    : 100px;
+        padding-bottom : 100px;
+
+        .__button {
+            .btn {
+                margin-right  : 0;
+                margin-bottom : 30px;
+            }
+        }
+    }
+
+    @media (max-width : @screen-xs) {
+
+        h1.size-ll {
+            font-size : @font-size-h2;
+        }
+    }
+}
+
+// Call to action common
+.call-to-action-common {
+    .__content-wrapper {
+        .btn-border.fullwidth {
+            letter-spacing : 2px;
+            max-width      : 200px;
+        }
+    }
+
+    @media @md {
+        .__content-wrapper {
+            height : 180px;
+
+            .__content-left, .__content-right {
+                height : 100%;
+            }
+
+            .__content-right {
+                text-align : right;
+            }
+        }
+
+        &.size-small {
+            .__content-wrapper {
+                height : 140px;
+            }
+        }
+    }
+
+    @media @sm-max {
+        .__content-wrapper {
+            text-align : center;
+
+            .__content-left {
+                padding-top    : 40px;
+                padding-bottom : 40px;
+            }
+
+            .__content-right {
+                padding-bottom : 40px;
+            }
+        }
+    }
+}

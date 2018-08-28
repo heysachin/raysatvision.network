@@ -1,0 +1,65 @@
+.jquery-modal.blocker{
+    transform: translate3d(0px, 0px, 0px);
+}
+.modal {
+    display: none;
+    position: absolute;
+    background: @light-base;
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.modal a.close-modal {
+    display: block;
+    position: absolute;
+    background-color : @brand-primary;
+    color: @light-base;
+    top: 0;
+    right: 0;
+    font-size : 0;
+
+    &:before{
+        font-family : "megatron" !important;
+        font-size : 18px;
+        line-height : 30px;
+        width : 30px;
+        text-align : center;
+        display : block;
+        float : left;
+        content: "\e07c";
+    }
+}
+
+.modal-spinner {
+    display: none;
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    background-color : @light-base;
+    border: 1px solid @gray-border;
+    border-radius: 50%;
+    color: @brand-primary;
+    line-height : 64px;
+    font-size: 38px;
+    text-align : center;
+    top: 50%;
+    left: 50%;
+    margin-right: -32px;
+    margin-top: -32px;
+}
+
+.modal-video-inner{
+    width : 960px;
+    position : relative;
+    max-width: 100%;
+}
+
+.modal{
+    .search-box-large{
+        width : 100vh;
+        max-width: 800px;
+        padding: 30px;
+    }
+}

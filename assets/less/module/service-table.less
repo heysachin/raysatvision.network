@@ -1,0 +1,102 @@
+.service-table {
+    .service-table-item {
+        margin-bottom : 30px;
+
+        .__title {
+            background-color : @gray-dark;
+            padding          : 25px 15px;
+        }
+
+        .__body {
+            border     : 1px solid @gray-border;
+            border-top : 0;
+            padding    : 0 15px 60px;
+
+            .service-box {
+                border-bottom: 1px solid @gray-border;
+                padding-top : 40px;
+                padding-bottom : 35px;
+
+                i {
+                    font-size: 32px;
+                    height: 32px;
+                    width: 32px;
+                    line-height: 32px;
+                    display: inline-block;
+                    margin-bottom : 22px;
+                }
+                
+                h4 {
+                    margin-bottom : 10px;
+                }
+            }
+
+            h5 {
+                border-bottom : 1px solid @gray-border;
+                margin-bottom : 0;
+                padding       : 28px 0;
+                color         : @gray;
+
+                span {
+                    color       : @gray-dark;
+                    font-weight : 700;
+                }
+            }
+
+            h1 {
+                font-weight    : 400;
+                margin-bottom  : 0;
+                padding-top    : 45px;
+                padding-bottom : 45px;
+            }
+        }
+
+        &.default {
+            .__title {
+                background-color : @brand-primary;
+            }
+
+            .__body {
+                background-color : #F9F9F9;
+            }
+        }
+    }
+
+    &.remove-col-gutter {
+        .service-table-item-wrapper {
+            &:not(:last-of-type) {
+                margin-right : -1px;
+            }
+        }
+
+        .service-table-item {
+            .__body {
+                padding-left  : 25px;
+                padding-right : 25px;
+            }
+        }
+    }
+
+    @media @xs-max {
+        .service-table-item {
+            max-width    : 400px;
+            margin-left  : auto;
+            margin-right : auto;
+        }
+
+        &.remove-col-gutter {
+            .service-table-item-wrapper {
+                margin-right  : 0px;
+                padding-left  : 15px;
+                padding-right : 15px;
+            }
+
+            .service-table-item {
+                .__body {
+                    padding-left  : 15px;
+                    padding-right : 15px;
+                }
+            }
+        }
+    }
+}

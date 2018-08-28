@@ -1,0 +1,365 @@
+// Blog posrt use in shortcode and homepage
+.block-blog-post-1 {
+    max-width : 500px;
+    .center-block;
+
+    .__image {
+        overflow : hidden;
+
+        img {
+            .easing-animation();
+            width : 100%;
+        }
+
+        &:hover img {
+            transform : scale(1.1);
+        }
+    } 
+
+    @media @md {
+        .__info {
+            margin-bottom : 10px !important;
+        }
+    }
+}
+
+.block-blog-post-2 {
+    max-width : 600px;
+    .center-block;
+
+    .__image {
+        margin-bottom : 30px;
+        .overlay-container {
+            overflow: hidden;
+        }
+
+        img {
+            .easing-animation();
+            width : 100%;
+            transform : scale(1);
+        }
+
+        &:hover img {
+            transform : scale(1.08);
+        }
+    }
+
+    .__content {
+        .__title {
+            margin-bottom : 15px;
+            > a {
+                .fz-4;
+                letter-spacing : 1px;
+            }
+        }
+    }
+
+    @media @md {
+        &.post-side {
+            .clearfix;
+            margin-left  : -15px;
+            margin-right : -15px;
+
+            > div {
+                width : 50%;
+                float : left;
+            }
+
+            .__image {
+                padding-left  : 15px;
+                padding-right : 15px;
+                padding-top   : 10px;
+            }
+
+            .__content {
+                padding-right : 15px;
+                .__title {
+                    margin-bottom : 0px;
+
+                    > a {
+                        .fz-5;
+                    }
+                }
+
+                .__info {
+                    margin-bottom : 5px;
+                }
+            }
+        }
+    }
+
+    @media @xs-max {
+        .__content {
+            .__title {
+                > a {
+                    .fz-5;
+                }
+            }
+        }
+    }
+}
+
+//- style for homepage blog and blog-detail
+.blog-share-this {
+    position : relative;
+    cursor   : pointer;
+
+    .__text {
+        i {
+            display        : inline-block;
+            font-size      : 18px;
+            padding-left   : 8px;
+            vertical-align : middle;
+            margin-top     : -4px;
+            margin-bottom  : -2px;
+
+            &:before {
+                display : block;
+                float   : left;
+            }
+        }
+    }
+
+    .st_sharethis {
+        position : absolute;
+        width    : 100%;
+        height   : 100%;
+        left     : 0;
+        top      : 0;
+        opacity  : 0;
+    }
+}
+
+.tags > a {
+    .fz-6-s;
+    display          : inline-block;
+    padding          : 0 15px;
+    margin           : 0 5px 8px 0;
+    border-radius    : 3px;
+    background-color : @gray-lighter;
+    font-style       : italic;
+
+    &:hover {
+        background-color : @brand-primary;
+        color            : @light-base;
+    }
+}
+
+.blog-related {
+    padding : 60px 0;
+}
+
+.post-tags {
+    padding       : 30px 0;
+    border-bottom : 1px solid @gray-lighter;
+
+    .__title {
+        .font-heading;
+        margin-right : 15px;
+    }
+
+    .tag {
+        text-align : left;
+    }
+
+    .tags, .sharethis {
+        display        : inline-block;
+        vertical-align : middle;
+    }
+
+    .sharethis {
+    }
+
+    @media @sm-max {
+        .tags {
+            margin-bottom : 20px;
+        }
+    }
+    @media @md {
+        display     : flex;
+        align-items : center;
+        .tags {
+            flex : 1
+        }
+    }
+
+}
+
+.post-author {
+    .clearfix;
+    padding       : 40px 0;
+    border-bottom : 1px solid @gray-lighter;
+
+    .__image {
+        float         : left;
+        width         : 185px;
+        padding-right : 15px;
+    }
+
+    .__about {
+        float    : none;
+        overflow : hidden;
+    }
+}
+
+.comment {
+    padding-top   : 45px;
+    border-bottom : 1px solid @gray-lighter;
+
+    .__avatar {
+        width : 100px;
+        float : left;
+    }
+
+    .__content-wrapper {
+        overflow     : hidden;
+        padding-left : 20px;
+    }
+
+    .__name, .__date {
+        .font-heading;
+        display        : inline-block;
+        vertical-align : top;
+        line-height    : 1.2;
+        margin-top     : -0.2em;
+    }
+
+    .__name {
+        padding-right : 15px;
+        margin-right  : 10px;
+        border-right  : 1px solid @gray-lighter;
+    }
+
+    .__date {
+        color : @brand-primary;
+        .fz-6-ss;
+    }
+
+    .__option {
+        text-align    : right;
+        margin-bottom : 35px;
+        .font-heading;
+        .fz-6-ss;
+
+        span:not(:last-child) {
+            border-right  : 1px solid @gray-lighter;
+            padding-right : 10px;
+            margin-right  : 10px;
+        }
+    }
+
+    .comment {
+        margin-left   : -20px;
+        border-top    : 1px solid @gray-lighter;
+        border-bottom : 0;
+
+        .__avatar {
+            width : 70px;
+        }
+    }
+}
+
+.form-comment {
+    padding-top : 60px;
+    margin-bottom:60px;
+    .__title {
+        margin-bottom : 40px;
+    }
+}
+
+.post-index-group-button {
+    padding-top   : 45px;
+    margin-bottom : 20px;
+    a:not(:last-child) {
+        margin-right : 30px;
+        margin-bottom : 25px;
+    }
+}
+
+@media @xs-max{
+    .__timeline-value{
+        display : none;
+    }
+    .blog-timeline-container{
+        .clearfix;
+    }
+}
+@media @sm {
+    .blog-timeline-container {
+        padding-left : 200px;
+        position     : relative;
+        overflow     : hidden;
+        z-index      : 10;
+
+        &:before {
+            content          : '';
+            position         : absolute;
+            width            : 5px;
+            height           : 100%;
+            left             : 140px;
+            top              : 0;
+            background-color : @gray-lighter;
+            z-index          : -1;
+        }
+
+        .post {
+            position : relative;
+        }
+
+        .__timeline-value {
+            display  : block;
+            width    : 125px;
+            position : absolute;
+            left     : -200px;
+            top      : 50px;
+
+            .__value {
+                .font-heading;
+                .fz-6-ss;
+                background-color : @gray-darker;
+                text-align       : center;
+                color            : @light-base;
+                border-radius    : 4px;
+
+                &:after{
+                    content: '';
+                    width : 0;
+                    right: -5px;
+                    position : absolute;
+                    top : 50%;
+                    margin-top : -5px;
+                    border-top:5px solid transparent;
+                    border-bottom:5px solid transparent;
+                    border-left:5px solid @gray-darker;
+                }
+            }
+
+            .__dot {
+                position         : absolute;
+                top              : 50%;
+                margin-top       : -7px;
+                right            : -25px;
+                border           : 2px solid @light-base;
+                box-shadow       : 0 0 0 1px @gray-lighter;
+                padding          : 3px;
+                border-radius    : 50%;
+                background-color : @brand-primary;
+                .square(15px);
+            }
+        }
+
+        .post-index:not(:first-child){
+            .__timeline-value{
+                top : 120px;
+            }
+        }
+        .post-index:last-child{
+            border-bottom: 0;
+            padding-bottom : 0;
+
+            .post-index-group-button{
+                margin-bottom : 0;
+            }
+        }
+    }
+}

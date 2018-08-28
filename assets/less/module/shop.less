@@ -1,0 +1,522 @@
+.block-shop-product {
+    margin-left  : auto;
+    margin-right : auto;
+    max-width    : 320px;
+
+    .__image {
+        overflow : hidden;
+        span.status {
+            position    : absolute;
+            top         : 20px;
+            right       : 0;
+            font-size   : @font-size-h6-s;
+            color       : @light-base;
+            line-height : 24px;
+            padding     : 0 5px;
+            z-index     : 10;
+
+            &.sale-off {
+                background-color : @brand-primary;
+            }
+
+            &.new {
+                background-color : @brand-secondary;
+            }
+
+            &.hot {
+                background-color : #FF4D4D;
+            }
+        }
+
+        img {
+            width     : 100%;
+            transform : scale(1);
+            .easing-animation();
+
+            .construction-style & {
+                border : 1px solid @gray-lighter;
+            }
+        }
+
+        .overlay {
+            .__layer {
+                .square(100%);
+                position : absolute;
+                top      : 0;
+                left     : 0;
+                opacity  : 0;
+                .easing-animation-long();
+            }
+
+            ul {
+                .clearfix();
+                display   : block;
+                position  : absolute;
+                top       : 50%;
+                transform : translateY(-50%);
+                width     : 100%;
+                font-size : 0;
+
+                li {
+                    display       : inline-block;
+                    margin-bottom : 0;
+
+                    > a {
+                        display             : inline-block;
+                        margin-left         : 5px;
+                        margin-right        : 5px;
+                        background-color    : fade(@light-base, 90%);
+                        color               : @gray-dark;
+                        transition-property : color, background, visibility, opacity, transform;
+                        transform           : translateY(40px);
+                        opacity             : 0;
+                        visibility          : hidden;
+
+                        i {
+                            width     : 44px;
+                            height    : 44px;
+                            display   : block;
+                            font-size : 17px;
+
+                            &:before {
+                                line-height : 44px;
+                                display     : block;
+                            }
+                        }
+
+                        &:hover {
+                            background-color : @brand-secondary;
+                            color            : @light-base;
+
+                            .construction-style & {
+                                background-color : @brand-primary;
+                            }
+                        }
+
+                        &:first-of-type {
+                            transition : color 0.4s 0.001s ease-out, background 0.4s 0.001s ease-out, visibility 0.4s 0.35s ease-out, opacity 0.4s 0.35s ease-out, transform 0.4s 0.50s ease-out;
+                        }
+
+                        &:nth-of-type(2) {
+                            transition : color 0.4s 0.001s ease-out, background 0.4s 0.001s ease-out, visibility 0.4s 0.35s ease-out, opacity 0.4s 0.35s ease-out, transform 0.4s 0.40s ease-out;
+                        }
+
+                        &:nth-of-type(3) {
+                            transition : color 0.4s 0.001s ease-out, background 0.4s 0.001s ease-out, visibility 0.4s 0.35s ease-out, opacity 0.4s 0.35s ease-out, transform 0.4s 0.30s ease-out;
+                        }
+
+                        &:nth-of-type(4) {
+                            transition : color 0.4s 0.001s ease-out, background 0.4s 0.001s ease-out, visibility 0.4s 0.25s ease-out, opacity 0.4s 0.25s ease-out, transform 0.4s 0.20s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            img {
+                transform : scale(1.08);
+            }
+
+            .overlay {
+                .__layer {
+                    opacity : 1;
+                }
+
+                ul {
+                    li {
+                        > a {
+                            visibility : visible;
+                            opacity    : 1;
+                            transform  : translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .__info {
+        padding-top    : 20px;
+        padding-bottom : 50px;
+
+        .__price {
+            del {
+                color        : #AAAAAA;
+                margin-right : 10px;
+            }
+
+            span {
+                color : @brand-primary;
+            }
+        }
+    }
+}
+
+.block-shop-product-small {
+    .__image {
+        width        : 64px;
+        float        : left;
+        margin-top   : 5px;
+        margin-right : 14px;
+
+        .construction-style & {
+            margin-top : 8px;
+
+            img {
+                border : 1px solid @gray-lighter;
+            }
+        }
+
+        img {
+            width : 100%;
+        }
+
+        .overlay-hover {
+            ul {
+                .clearfix();
+                display   : block;
+                position  : absolute;
+                top       : 50%;
+                transform : translateY(-50%);
+                width     : 100%;
+                font-size : 0;
+
+                li {
+                    display       : inline-block;
+                    margin-bottom : 0;
+
+                    a.quick-view {
+                        display      : inline-block;
+                        margin-left  : 5px;
+                        margin-right : 5px;
+                        color        : @light-base;
+
+                        i {
+                            width     : 50px;
+                            height    : 50px;
+                            display   : block;
+                            font-size : 17px;
+
+                            &:before {
+                                line-height : 50px;
+                                display     : block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .__info {
+        overflow : hidden;
+        p.__category {
+            letter-spacing : 0.05em;
+            margin-bottom  : 0;
+        }
+
+        .star-ratings {
+            float : left;
+        }
+
+        span.__price {
+            float       : left;
+            margin-left : 20px;
+        }
+    }
+}
+
+.block-shop-product-small-2 {
+    padding-top    : 10px;
+    padding-bottom : 15px;
+    .clearfix();
+
+    .__image {
+        width        : 85px;
+        float        : left;
+        margin-top   : 5px;
+        margin-right : 30px;
+
+        img {
+            width : 100%;
+        }
+    }
+
+    .__info {
+        overflow : hidden;
+
+        .__price {
+            del {
+                margin-right : 10px;
+            }
+        }
+    }
+}
+
+.shop-quick-view {
+    width     : 100vw;
+    max-width : 900px;
+
+    @media @lg {
+        .__content-left {
+            width : 100% * 17 / 37;
+        }
+
+        .__content-right {
+            width : 100% * 20 / 37;
+        }
+    }
+
+    @media @xs-max {
+        .__content-left {
+            margin-bottom : 40px;
+        }
+    }
+}
+
+.box-products {
+    padding-bottom : 10px;
+
+    h6 {
+        margin-bottom : 30px;
+    }
+
+    .block-shop-product-small {
+        margin-bottom : 30px;
+    }
+}
+
+.product-carousel {
+    position       : relative;
+    padding-bottom : 88px;
+    .__box {
+        position : absolute;
+        width    : 100%;
+        bottom   : 0;
+        left     : 0;
+        height   : 78px;
+    }
+
+    .slick-dots {
+        bottom  : -58px;
+        z-index : 10;
+
+        li {
+            button {
+                background-color : @gray-lighter;
+                border           : 1px solid @gray-lighter;
+            }
+
+            &.slick-active button, button:hover {
+                background-color : transparent;
+                border-color     : @gray-border;
+            }
+        }
+    }
+
+    @media (max-width : 600px) {
+        .slider {
+            max-width    : 390px;
+            margin-left  : auto;
+            margin-right : auto;
+        }
+
+        padding-bottom : 50px;
+
+        .__box {
+            border-top : 0;
+        }
+
+        .slick-dots {
+            visibility : hidden;
+        }
+    }
+}
+
+.shop-top-slider {
+    .slider {
+        .slick-arrow {
+            opacity : 1;
+        }
+
+        .__item {
+            height            : 530px;
+            background-repeat : no-repeat;
+            background-size   : cover;
+        }
+    }
+}
+
+// Shop order tracking
+.shop-order-tracking {
+    max-width      : 800px;
+    margin-right   : auto;
+    margin-left    : auto;
+    padding-top    : 60px;
+    padding-bottom : 110px;
+
+    > p {
+        margin-bottom : 35px;
+    }
+
+    .__order-id, .__billing-email {
+        h6 {
+            margin-bottom : 40px;
+        }
+
+        input {
+            text-align : center;
+            max-width  : 550px;
+        }
+    }
+
+    .__order-id {
+        margin-bottom : 15px;
+    }
+
+    .__billing-email {
+        margin-bottom : 25px;
+    }
+
+    .__button {
+        .btn {
+            max-width : 150px;
+        }
+    }
+}
+
+// Shop account
+.shop-account {
+    .__block {
+        .__title {
+            margin-bottom : 5px;
+        }
+
+        .__sub-title {
+            margin-bottom : 45px;
+            &:after {
+                content          : "";
+                display          : block;
+                width            : 50px;
+                height           : 1px;
+                background-color : @gray-dark;
+                margin           : 15px auto 0;
+            }
+        }
+
+        .__email, .__password {
+            input {
+                max-width  : 470px;
+                text-align : center;
+            }
+        }
+
+        .__button {
+            .btn {
+                max-width : 300px;
+            }
+        }
+
+        .checkbox {
+            font-size : 0;
+
+            label {
+                display : inline-block;
+                cursor  : pointer;
+
+                input[type="checkbox"] {
+                    display : none;
+
+                    & + span {
+                        > i {
+                            .easing-animation();
+                            display          : inline-block;
+                            position         : absolute;
+                            top              : 50%;
+                            left             : 0;
+                            transform        : translateY(-50%);
+                            width            : 14px;
+                            height           : 14px;
+                            border           : 1px solid @gray-border;
+                            background-color : @light-base;
+                            text-align       : center;
+                            font-size        : 8px;
+                            color            : @light-base;
+
+                            &:before {
+                                display     : block;
+                                line-height : 12px;
+                            }
+                        }
+                    }
+
+                    &:checked + span {
+                        > i {
+                            color : @brand-primary;
+                        }
+                    }
+                }
+
+                > span {
+                    .clearfix();
+                    font-size    : @font-size-h6;
+                    position     : relative;
+                    display      : inline-block;
+                    padding-left : 20px;
+                    line-height  : 30px;
+
+                    i {
+                        float : left;
+                    }
+
+                    span {
+                        float   : left;
+                        display : inline-block;
+                    }
+                }
+            }
+        }
+
+        &.__login {
+            position: relative;
+
+            .__separator {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                width: 1px;
+                height: 447px;
+                background-color : @gray-lighter;
+            }
+
+            .__email, .__password {
+                input {
+                    background-color : @gray-lightest;
+                }
+            }
+
+
+            .__password {
+                input {
+                    margin-bottom : 20px;
+                }
+            }
+
+            .checkbox {
+                margin-bottom : 22px;
+            }
+
+            .__button {
+                margin-bottom :25px;
+            }
+
+            .__forgotten {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,165 @@
+// color generator , eg:"&.color-primary{color:primary}"
+@brand-title-array : primary, secondary, success, info, warning, danger;
+@brand-color-array : brand-primary, brand-secondary, brand-success, brand-info, brand-warning, brand-danger;
+@gray-title-array : gray-base, gray-darkest, gray-darker, gray-dark, gray , gray-light , gray-lighter, gray-lightest,gray-border,light ;
+@gray-color-array : gray-base, gray-darkest, gray-darker, gray-dark, gray , gray-light , gray-lighter, gray-lightest,gray-border,light-base;
+.x-color(@prefix ;@property; @brand-array ; @color-array) {
+    .for(length(@brand-array));
+    .-each(@i) {
+        @brand : extract(@brand-array, @i);
+        @value : extract(@color-array, @i);
+        &.@{prefix}-@{brand} {
+            @{property}: @@value;
+        }
+    }
+}
+
+.x-color-child(@prefix ;@property; @child; @brand-array ; @color-array) {
+    .for(length(@brand-array));
+    .-each(@i) {
+        @brand : extract(@brand-array, @i);
+        @value : extract(@color-array, @i);
+        &.@{prefix}-@{brand} @{child}{
+            @{property}: @@value;
+        }
+    }
+}
+
+.x-color-parent(@prefix ;@property; @brand-array ; @color-array) {
+    .for(length(@brand-array));
+    .-each(@i) {
+        @brand : extract(@brand-array, @i);
+        @value : extract(@color-array, @i);
+        .@{prefix}-@{brand} & {
+            @{property}: @@value;
+        }
+    }
+}
+// Generator for brand-color
+.x-color-brand(@prefix ; @property){
+    .x-color(@prefix ; @property; @brand-title-array; @brand-color-array);
+}
+
+.x-color-brand-parent(@prefix ; @property){
+    .x-color-parent(@prefix ; @property; @brand-title-array; @brand-color-array);
+}
+// Generator for gray color
+.x-color-gray(@prefix ; @property){
+    .x-color(@prefix ; @property; @gray-title-array; @gray-color-array);
+}
+
+.x-color-gray-parent(@prefix ; @property){
+    .x-color-parent(@prefix ; @property; @gray-title-array; @gray-color-array);
+}
+
+.x-color-full(@prefix ; @property){
+    .x-color-gray(@prefix ; @property);
+    .x-color-brand(@prefix; @property);
+}
+
+.x-color-full-parent(@prefix ; @property){
+    .x-color-gray-parent(@prefix ; @property);
+    .x-color-brand-parent(@prefix; @property);
+}
+
+// color generator , eg:".color-primary &{color:primary}"
+
+
+/* Color class */
+& { .x-color-full(color; color);}
+
+/* Border class */
+& { .x-color-full(border; border-color);}
+
+/* Background class */
+& {.x-color-full(bgc ; background-color);}
+
+/* Background rgba class */
+
+.bgc-gradient{
+    background : @overlay-gradient;
+}
+
+.bgc-gradient-2{
+    background-image: ~'radial-gradient(circle farthest-side, rgba(17,29,49,0.92) 0%,rgba(4,7,14,0.92) 100%)';
+}
+
+&{
+    .for(1,9);
+    .-each(@i) {
+        .bgc-dark-o-@{i}{
+            background-color : fade(@gray-base , @i * 10%);
+            color : @light-base;
+        }
+        .bgc-light-o-@{i}{
+            background-color : fade(@light-base , @i * 10%);
+        }
+    }
+
+    .bgc-dark-o{
+        background-color : fade(@gray-base , 70%);
+    }
+
+    .bgc-light-o{
+        background-color : fade(@light-base , 70%);
+    }
+}
+
+.bgc-transparent{
+    background-color : transparent;
+}
+
+
+.bgc-gray-base,.bgc-gray-darkest,.bgc-gray-darker, .bgc-gray-dark, .bgc-gray , .bgc-gray-light, .bgc-gradient-2, .bgc-gradient,.bgc-transparent, .bgc-primary, .bgc-secondary, .bgc-success, .bgc-info, .bgc-warning, .bgc-danger{
+    color: @light-base;
+}
+
+/* Common border */
+
+.border-top{
+    border-top: 1px solid @gray-border;
+}
+.border-bottom{
+    border-bottom: 1px solid @gray-border;
+}
+.border-left{
+    border-left: 1px solid @gray-border;
+}
+.border-right{
+    border-right: 1px solid @gray-border;
+}
+.border-top-lighter{
+    border-top: 1px solid @gray-lighter;
+}
+.border-bottom-lighter{
+    border-bottom: 1px solid @gray-lighter;
+}
+.border-left-lighter{
+    border-left: 1px solid @gray-lighter;
+}
+.border-right-lighter{
+    border-right: 1px solid @gray-lighter;
+}
+
+.border-solid {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.highlight-primary{
+    background-color : @brand-primary + #111;
+    border-top: 5px solid @brand-primary + #111;
+    border-bottom: 5px solid @brand-primary + #111;
+    color : @light-base;
+}
+.highlight-secondary{
+    background-color : @brand-secondary + #111;
+    border-top: 5px solid @brand-secondary + #111;
+    border-bottom: 5px solid @brand-secondary + #111;
+    color : @light-base;
+}
+.highlight-gray-lighter{
+    background-color : @gray-lighter;
+    border-top: 5px solid @gray-lighter;
+    border-bottom: 5px solid @gray-lighter;
+}
