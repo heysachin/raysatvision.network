@@ -1,5 +1,6 @@
 <?php
 // EDIT A LINE BELOW AS REQUIRED
+console.log("Email Sending");
 
 $email_to = "sachin@tricodia.com";
 // $email_to = "raysatvisionkovalam@gmail.com";
