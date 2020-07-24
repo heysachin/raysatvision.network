@@ -13,11 +13,11 @@
   ],
   "author": {
     "name": "Edson Hilios",
-    "url": "http://edson.hilios.com.br"
+    "url": "https://edson.hilios.com.br"
   },
-  "homepage": "http://hilios.github.io/jQuery.countdown/",
-  "docs": "http://hilios.github.io/jQuery.countdown/documentation.html",
-  "demo": "http://hilios.github.io/jQuery.countdown/examples.html",
+  "homepage": "https://hilios.github.io/jQuery.countdown/",
+  "docs": "https://hilios.github.io/jQuery.countdown/documentation.html",
+  "demo": "https://hilios.github.io/jQuery.countdown/examples.html",
   "bugs": "https://github.com/hilios/jQuery.countdown/issues",
   "download": "https://github.com/hilios/jQuery.countdown/releases/download/2.0.4/jquery.countdown-2.0.4.zip",
   "licenses": [

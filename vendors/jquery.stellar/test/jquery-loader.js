@@ -3,7 +3,7 @@
 	var parts = document.location.search.slice(1).split('&'),
 		current,
 		version = '1.9.0',
-		file = 'http://code.jquery.com/jquery-git.js';
+		file = 'https://code.jquery.com/jquery-git.js';
 
 	for (var i = 0; i < parts.length; i++) {
 		current = parts[i].split('=');

@@ -1,9 +1,9 @@
 #
 # Name    : wow
-# Author  : Matthieu Aussaguel, http://mynameismatthieu.com/, @mattaussaguel
+# Author  : Matthieu Aussaguel, https://mynameismatthieu.com/, @mattaussaguel
 # Version : 1.1.2
 # Repo    : https://github.com/matthieua/WOW
-# Website : http://mynameismatthieu.com/wow
+# Website : https://mynameismatthieu.com/wow
 #
 
 
@@ -87,7 +87,7 @@ MutationObserver = @MutationObserver or @WebkitMutationObserver or @MozMutationO
 
     observe: ->
 
-# getComputedStyle shim, from http://stackoverflow.com/a/21797294
+# getComputedStyle shim, from https://stackoverflow.com/a/21797294
 getComputedStyle = @getComputedStyle or \
   (el, pseudo) ->
     @getPropertyValue = (prop) ->

@@ -1,6 +1,6 @@
 {
   "name": "chart.js",
-  "homepage": "http://www.chartjs.org",
+  "homepage": "https://www.chartjs.org",
   "description": "Simple HTML5 charts using the canvas element.",
   "version": "1.0.2",
   "main": "Chart.js",

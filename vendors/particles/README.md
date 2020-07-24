@@ -5,13 +5,13 @@
 ------------------------------
 ### `Demo / Generator`
 
-<a href="http://vincentgarreau.com/particles.js/" target="_blank"><img src="http://vincentgarreau.com/particles.js/assets/img/github-screen.jpg" alt="particles.js generator" /></a>
+<a href="https://vincentgarreau.com/particles.js/" target="_blank"><img src="https://vincentgarreau.com/particles.js/assets/img/github-screen.jpg" alt="particles.js generator" /></a>
 
 Configure, export, and share your particles.js configuration on CodePen: <br />
-http://vincentgarreau.com/particles.js/
+https://vincentgarreau.com/particles.js/
 
 CodePen demo: <br />
-http://codepen.io/VincentGarreau/pen/pnlso
+https://codepen.io/VincentGarreau/pen/pnlso
 
 -------------------------------
 ### `Usage`
@@ -161,7 +161,7 @@ key | option type / notes | example
 `particles.shape.stroke.width` | number | `2`
 `particles.shape.stroke.color` | HEX (string) | `"#222222"`
 `particles.shape.polygon.nb_slides` | number | `5`
-`particles.shape.image.src` | path link <br /> svg / png / gif / jpg | `"assets/img/yop.svg"` <br /> `"http://mywebsite.com/assets/img/yop.png"`
+`particles.shape.image.src` | path link <br /> svg / png / gif / jpg | `"assets/img/yop.svg"` <br /> `"https://mywebsite.com/assets/img/yop.png"`
 `particles.shape.image.width` | number <br />(for aspect ratio) | `100`
 `particles.shape.image.height` | number <br />(for aspect ratio) | `100`
 `particles.opacity.value` | number (0 to 1) | `0.75`
@@ -240,4 +240,4 @@ meteor add newswim:particles
 
 ***Please use this host or your own to load particles.js on your projects***
 
-http://www.jsdelivr.com/#!particles.js
+https://www.jsdelivr.com/#!particles.js

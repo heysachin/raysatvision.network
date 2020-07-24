@@ -1,6 +1,6 @@
 A simple & lightweight method of displaying modal windows with jQuery.
 
-You probably want [a demo](http://kylefox.ca/jquery-modal/examples/index.html), don't you?
+You probably want [a demo](https://kylefox.ca/jquery-modal/examples/index.html), don't you?
 
 # Why another modal plugin?
 
@@ -19,7 +19,7 @@ You can install [jquery-modal](https://www.npmjs.com/package/jquery-modal) with 
 
 `npm install jquery-modal`
 
-or with [Bower](http://bower.io/):
+or with [Bower](https://bower.io/):
 
 `bower install jquery-modal`
 
@@ -36,7 +36,7 @@ _(You'll obviously need to include jQuery as well)._
 
 **jQuery Requirements:** As of version 0.3.0, jQuery 1.7 is required. If you're using an earlier version of jQuery you can use the [v.0.2.5 tag.](https://github.com/kylefox/jquery-modal/tags)
 
-**Naming conflict with Bootstrap:** Bootstrap's [modal](http://getbootstrap.com/javascript/#modals) uses the same `$.modal` namespace. If you want to use jquery-modal with Bootstrap, the simplest solution is to manually modify the name of this plugin.
+**Naming conflict with Bootstrap:** Bootstrap's [modal](https://getbootstrap.com/javascript/#modals) uses the same `$.modal` namespace. If you want to use jquery-modal with Bootstrap, the simplest solution is to manually modify the name of this plugin.
 
 # Opening
 
@@ -230,7 +230,7 @@ The handlers receive no arguments. The events are triggered on the `<a>` element
 
 ## More advanced AJAX handling
 
-It's a good idea to provide more robust AJAX handling -- error handling, in particular. Instead of accommodating the myriad [`$.ajax` options](http://api.jquery.com/jQuery.ajax/) jQuery provides, jquery-modal makes it possible to directly modify the AJAX request itself.
+It's a good idea to provide more robust AJAX handling -- error handling, in particular. Instead of accommodating the myriad [`$.ajax` options](https://api.jquery.com/jQuery.ajax/) jQuery provides, jquery-modal makes it possible to directly modify the AJAX request itself.
 
 Simply bypass the default AJAX handling (i.e.: don't use `rel="modal"`)
 
@@ -265,9 +265,9 @@ Note that the AJAX response must be wrapped in a div with class <code>modal</cod
 
 ### Found a bug? MEH!
 
-![](http://drops.kylefox.ca/1cqGP+)
+![](https://drops.kylefox.ca/1cqGP+)
 
-**Just kidding.** Please [create an issue](https://github.com/kylefox/jquery-modal/issues/new) and **include a publicly-accessible demonstration of the bug.** [Dropbox](https://www.dropbox.com) or [JSFiddle](http://jsfiddle.net/) work well for demonstrating reproducable bugs, but you can use anything as long as it's publicly accessible. Your issue is much more likely to be resolved/merged if it includes a fix & pull request.
+**Just kidding.** Please [create an issue](https://github.com/kylefox/jquery-modal/issues/new) and **include a publicly-accessible demonstration of the bug.** [Dropbox](https://www.dropbox.com) or [JSFiddle](https://jsfiddle.net/) work well for demonstrating reproducable bugs, but you can use anything as long as it's publicly accessible. Your issue is much more likely to be resolved/merged if it includes a fix & pull request.
 
 **Have an idea that improves jquery-modal?** Awesome! Please fork this repository, implement your idea (including documentation, if necessary), and submit a pull request.
 
@@ -287,11 +287,11 @@ Keep in mind the spirit of this plugin is **minimalism** so I'm very picky about
 
 # Support
 
-Please post a question on [StackOverflow](http://stackoverflow.com/). Commercial support by email is also available — please contact kylefox@gmail.com for rates. Unfortunately I am unable to provide free email support.
+Please post a question on [StackOverflow](https://stackoverflow.com/). Commercial support by email is also available — please contact kylefox@gmail.com for rates. Unfortunately I am unable to provide free email support.
 
 # License (MIT)
 
-jQuery Modal is distributed under the [MIT License](Learn more at http://opensource.org/licenses/mit-license.php):
+jQuery Modal is distributed under the [MIT License](Learn more at https://opensource.org/licenses/mit-license.php):
 
     Copyright (c) 2012 Kyle Fox
 

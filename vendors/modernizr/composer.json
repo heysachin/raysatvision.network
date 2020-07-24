@@ -8,12 +8,12 @@
         "feature detection"
     ],
     "type": "component",
-    "homepage": "http://modernizr.com",
+    "homepage": "https://modernizr.com",
     "license": "MIT",
     "authors": [
         {
             "name": "Modernizr",
-            "homepage": "http://modernizr.com"
+            "homepage": "https://modernizr.com"
         },
         { "name": "Faruk Ates" },
         { "name": "Paul Irish" },

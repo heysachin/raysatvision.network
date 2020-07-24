@@ -4,7 +4,7 @@ _Cascading grid layout library_
 
 Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.
 
-See [masonry.desandro.com](http://masonry.desandro.com) for complete docs and demos.
+See [masonry.desandro.com](https://masonry.desandro.com) for complete docs and demos.
 
 ## Install
 
@@ -69,7 +69,7 @@ Add a class of `js-masonry` to your element. Options can be set in JSON in `data
 
 ## License
 
-Masonry is released under the [MIT license](http://desandro.mit-license.org). Have at it.
+Masonry is released under the [MIT license](https://desandro.mit-license.org). Have at it.
 
 * * *
 

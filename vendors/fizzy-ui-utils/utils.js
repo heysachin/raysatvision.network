@@ -108,7 +108,7 @@ utils.removeFrom = function( ary, obj ) {
 
 // ----- isElement ----- //
 
-// http://stackoverflow.com/a/384380/182183
+// https://stackoverflow.com/a/384380/182183
 utils.isElement = ( typeof HTMLElement == 'function' || typeof HTMLElement == 'object' ) ?
   function isElementDOM2( obj ) {
     return obj instanceof HTMLElement;
@@ -218,7 +218,7 @@ utils.debounceMethod = function( _class, methodName, threshold ) {
 
 // ----- htmlInit ----- //
 
-// http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
+// https://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
 utils.toDashed = function( str ) {
   return str.replace( /(.)([A-Z])/g, function( match, $1, $2 ) {
     return $1 + '-' + $2;

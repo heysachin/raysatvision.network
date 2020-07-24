@@ -1,12 +1,12 @@
 /*!
  * jQuery UI Effects 1.11.4
- * http://jqueryui.com
+ * https://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://api.jqueryui.com/category/effects-core/
+ * https://api.jqueryui.com/category/effects-core/
  */
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
@@ -36,7 +36,7 @@ $.effects = {
  *
  * Copyright 2014 jQuery Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
  * Date: Wed Jan 16 08:47:09 2013 -0600
  */
@@ -922,7 +922,7 @@ $.extend( $.effects, {
 			if ( set[ i ] !== null ) {
 				val = element.data( dataSpace + set[ i ] );
 				// support: jQuery 1.6.2
-				// http://bugs.jquery.com/ticket/9917
+				// https://bugs.jquery.com/ticket/9917
 				// jQuery 1.6.2 incorrectly returns undefined for any falsy value.
 				// We can't differentiate between "" and 0 here, so we just assume
 				// empty string since it's likely to be a more common value...
@@ -1249,7 +1249,7 @@ $.fn.extend({
 
 (function() {
 
-// based on easing equations from Robert Penner (http://www.robertpenner.com/easing)
+// based on easing equations from Robert Penner (https://www.robertpenner.com/easing)
 
 var baseEasings = {};
 

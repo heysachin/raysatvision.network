@@ -1,12 +1,12 @@
 /*!
  * jQuery UI Effects Transfer 1.11.4
- * http://jqueryui.com
+ * https://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://api.jqueryui.com/transfer-effect/
+ * https://api.jqueryui.com/transfer-effect/
  */
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {

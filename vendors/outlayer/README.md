@@ -2,7 +2,7 @@
 
 _Brains and guts of a layout library_
 
-Outlayer is a base layout class for layout libraries like [Isotope](http://isotope.metafizzy.co), [Packery](http://packery.metafizzy.co), and [Masonry](http://masonry.desandro.com)
+Outlayer is a base layout class for layout libraries like [Isotope](https://isotope.metafizzy.co), [Packery](https://packery.metafizzy.co), and [Masonry](https://masonry.desandro.com)
 
 Outlayer layouts work with a container element and children item elements.
 
@@ -17,9 +17,9 @@ Outlayer layouts work with a container element and children item elements.
 
 ## Install
 
-Install with [Bower](http://bower.io): `bower install outlayer`
+Install with [Bower](https://bower.io): `bower install outlayer`
 
-[Install with npm](http://npmjs.org/package/outlayer): `npm install outlayer`
+[Install with npm](https://npmjs.org/package/outlayer): `npm install outlayer`
 
 ## Outlayer.create()
 
@@ -92,9 +92,9 @@ $( function() {
 
 ## RequireJS
 
-To use Outlayer with [RequireJS](http://requirejs.org/), you'll need to set some config.
+To use Outlayer with [RequireJS](https://requirejs.org/), you'll need to set some config.
 
-Set [baseUrl](http://requirejs.org/docs/api.html#config-baseUrl) to bower_components and set a [path config](http://requirejs.org/docs/api.html#config-paths) for all your application code.
+Set [baseUrl](https://requirejs.org/docs/api.html#config-baseUrl) to bower_components and set a [path config](https://requirejs.org/docs/api.html#config-paths) for all your application code.
 
 ``` js
 requirejs.config({
@@ -126,4 +126,4 @@ requirejs.config({
 
 ## MIT license
 
-Outlayer is released under the [MIT license](http://desandro.mit-license.org).
+Outlayer is released under the [MIT license](https://desandro.mit-license.org).

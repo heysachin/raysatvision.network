@@ -37,7 +37,7 @@
   },
   "scripts": {
     "test": "./tools/test.sh",
-    "dev": "concurrent 'npm run serve' 'grunt watch' 'open http://localhost:8080'",
+    "dev": "concurrent 'npm run serve' 'grunt watch' 'open https://localhost:8080'",
     "serve": "static ./local-dev -c 0",
     "lint": "./tools/lint.sh",
     "jscs": "jscs ./src ./test",
@@ -47,7 +47,7 @@
     "type": "git",
     "url": "git://github.com/kimmobrunfeldt/progressbar.js.git"
   },
-  "author": "Kimmo Brunfeldt <kimmobrunfeldt@gmail.com> (http://kimmobrunfeldt.github.io/)",
+  "author": "Kimmo Brunfeldt <kimmobrunfeldt@gmail.com> (https://kimmobrunfeldt.github.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kimmobrunfeldt/progressbar.js/issues"

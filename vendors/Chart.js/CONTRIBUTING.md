@@ -13,7 +13,7 @@ If you're suggesting a new chart type, please take a look at [writing new chart 
 
 To keep the library lightweight for everyone, it's unlikely we'll add many more chart types to the core of Chart.js, but issues are a good medium to design and spec out how new chart types could work and look.
 
-Please do not use issues for support requests. For help using Chart.js, please take a look at the [`chartjs`](http://stackoverflow.com/questions/tagged/chartjs) tag on Stack Overflow.
+Please do not use issues for support requests. For help using Chart.js, please take a look at the [`chartjs`](https://stackoverflow.com/questions/tagged/chartjs) tag on Stack Overflow.
 
 
 Reporting bugs
@@ -25,7 +25,7 @@ Guidlines for reporting bugs:
 
  - Check the issue search to see if it has already been reported
  - Isolate the problem to a simple test case
- - Provide a demonstration of the problem on [JS Bin](http://jsbin.com) or similar
+ - Provide a demonstration of the problem on [JS Bin](https://jsbin.com) or similar
 
 Please provide any additional details associated with the bug, if it's browser or screen density specific, or only happens with a certain configuration or data.
 

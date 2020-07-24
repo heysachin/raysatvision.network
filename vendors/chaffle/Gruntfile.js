@@ -222,7 +222,7 @@
           base: '<%= pkg.public %>/',
           open: {
             server: {
-              path: 'http://<%= connect.server.options.hostname %>:<%= connect.server.options.port %>'
+              path: 'https://<%= connect.server.options.hostname %>:<%= connect.server.options.port %>'
             }
           }
         }

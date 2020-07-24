@@ -3,11 +3,11 @@ chaffle
 chaffle is a jquery plug-in that allows you to shuffle randomly character.
 
 ##example
-http://blivesta.github.io/chaffle/
+https://blivesta.github.io/chaffle/
 
 ##Setup
 ```
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="./dist/jquery.chaffle.min.js"></script>
 
 <script type="text/javascript">

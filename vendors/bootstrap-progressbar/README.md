@@ -1,6 +1,6 @@
 # bootstrap-progressbar - 0.8.5
 
-`bootstrap-progressbar` is a [jQuery](http://jquery.com) plugin which extends the basic [twitter-bootstrap](https://github.com/twbs/bootstrap) progressbar. It provides the ability to animate the progressbar by adding Javascript in combination with the preexisting css transitions. Additionally you can display the current progress information in the bar or get the value via callback.
+`bootstrap-progressbar` is a [jQuery](https://jquery.com) plugin which extends the basic [twitter-bootstrap](https://github.com/twbs/bootstrap) progressbar. It provides the ability to animate the progressbar by adding Javascript in combination with the preexisting css transitions. Additionally you can display the current progress information in the bar or get the value via callback.
 
 
 ## What's new in v0.9.0?
@@ -10,21 +10,21 @@
 
 > __Note__: this version replaces the not official supported `aria-valuetransitionsgoal` with `data-transitionsgoal` which may affect (or brick) your progressbars.
 
-> __Note__: Bootstrap's [low percentage styles](http://getbootstrap.com/components/#progress-low-percentages) (introduced in 3.2.0) causes flickering under some circumstances (e.g. slow transitions). To preserve correct progressbar functionality + appearance this bs feature is reverted in v0.8.3. (and reverted by bootstrap in 3.3.0)
+> __Note__: Bootstrap's [low percentage styles](https://getbootstrap.com/components/#progress-low-percentages) (introduced in 3.2.0) causes flickering under some circumstances (e.g. slow transitions). To preserve correct progressbar functionality + appearance this bs feature is reverted in v0.8.3. (and reverted by bootstrap in 3.3.0)
 
 > __Note__: Stacked progressbars are not supported by now.
 
 
 ## Demo
 
-* http://www.minddust.com/project/bootstrap-progressbar/demo/
+* https://www.minddust.com/project/bootstrap-progressbar/demo/
 
 
 ## Installation
 
 * Download the latest release: [v0.9.0](https://github.com/minddust/bootstrap-progressbar/archive/v0.9.0.zip)
 * Clone the repository: `git clone git@github.com:minddust/bootstrap-progressbar.git`
-* Install with [Bower](http://bower.io): `bower install bootstrap-progressbar`
+* Install with [Bower](https://bower.io): `bower install bootstrap-progressbar`
 
 
 ## Usage
@@ -76,10 +76,10 @@
         <script src="less.js" type="text/javascript"></script>
         ```
 
-        or precompile it yourself. (see: [3rd party compilers](http://lesscss.org/usage/#third-party-compilers-node-js-compilers))
+        or precompile it yourself. (see: [3rd party compilers](https://lesscss.org/usage/#third-party-compilers-node-js-compilers))
 
         scss:
-        * need to precompile it yourself (see: [libsass](http://sass-lang.com/libsass))
+        * need to precompile it yourself (see: [libsass](https://sass-lang.com/libsass))
 
         css:
 

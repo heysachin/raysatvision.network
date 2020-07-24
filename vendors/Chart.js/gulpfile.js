@@ -130,7 +130,7 @@ gulp.task('server', function(){
 
 // Convenience task for opening the project straight from the command line
 gulp.task('_open', function(){
-	exec('open http://localhost:8000');
+	exec('open https://localhost:8000');
 	exec('subl .');
 });
 

@@ -15,7 +15,7 @@ Use built-in shapes or [create your own paths](#pathpath-options).
 
 * [How to install](#installing-options)
 * [Demo & Examples](https://kimmobrunfeldt.github.io/progressbar.js)
-* [**Try** in JSFiddle](http://jsfiddle.net/kimmobrunfeldt/8xa87k31/392/)
+* [**Try** in JSFiddle](https://jsfiddle.net/kimmobrunfeldt/8xa87k31/392/)
 * [API documentation](#api)
 
 **Build status**
@@ -71,13 +71,13 @@ Global variable
 var line = new ProgressBar.Line('#container');
 ```
 
-Files in `dist/` folder are UMD modules built with Browserify's `--standalone` switch. Read more about [standalone Browserify builds](http://www.forbeslindesay.co.uk/post/46324645400/standalone-browserify-builds).
+Files in `dist/` folder are UMD modules built with Browserify's `--standalone` switch. Read more about [standalone Browserify builds](https://www.forbeslindesay.co.uk/post/46324645400/standalone-browserify-builds).
 
 
 # How it works
 
 Progress bars are just regular SVG paths.
-Read [Jake Archibald's blog post](http://jakearchibald.com/2013/animated-line-drawing-svg/) to see how the path drawing works under the hood.
+Read [Jake Archibald's blog post](https://jakearchibald.com/2013/animated-line-drawing-svg/) to see how the path drawing works under the hood.
 
 *ProgressBar.js* uses [shifty](https://jeremyckahn.github.io/shifty/) tweening library to animate path drawing.
 So in other words, animation is done with JavaScript using [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame).
@@ -387,7 +387,7 @@ passing a SVG path created with e.g. Adobe Illustrator. It's on caller's respons
 Assuming there was SVG object with heart shaped path in HTML
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 100">
+<svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 100">
     <path fill-opacity="0" stroke-width="0.5" stroke="#f4f4f4" d="M81.495,13.923c-11.368-5.261-26.234-0.311-31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923  C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-16.268,33.033-25.344,39.819-37.379  C99.387,33.883,93.598,19.539,81.495,13.923z"/>
     <path id="heart-path" fill-opacity="0" stroke-width="0.6" stroke="#555" d="M81.495,13.923c-11.368-5.261-26.234-0.311-31.489,11.032C44.74,13.612,29.879,8.657,18.511,13.923  C6.402,19.539,0.613,33.883,10.175,50.804c6.792,12.04,18.826,21.111,39.831,37.379c20.993-16.268,33.033-25.344,39.819-37.379  C99.387,33.883,93.598,19.539,81.495,13.923z"/>
 </svg>
@@ -550,7 +550,7 @@ Tweening engine changes defined values over time and calls step function for eac
     ```
 
     Thanks to shifty, you can tween values in formats like `translateX(45px)`, `rgb(0,255,0)` and `#fff`.
-    See all supported string formats from [shifty's documentation](http://jeremyckahn.github.io/shifty/dist/doc/modules/Tweenable.token.html)
+    See all supported string formats from [shifty's documentation](https://jeremyckahn.github.io/shifty/dist/doc/modules/Tweenable.token.html)
 
     Easing defined as option for animation applies to all of the specified values.
 
@@ -622,10 +622,10 @@ bar.animate(0.5, opts);
 
 ## Examples
 
-* [**Minimal**](http://kimmobrunfeldt.github.io/progressbar.js/examples/minimal/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/minimal)
-* [**File upload**](http://kimmobrunfeldt.github.io/progressbar.js/examples/upload/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/upload)
-* [**Telegram**](http://kimmobrunfeldt.github.io/progressbar.js/examples/telegram/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/telegram)
-* [**Password strength**](http://kimmobrunfeldt.github.io/progressbar.js/examples/password-strength/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/password-strength)
+* [**Minimal**](https://kimmobrunfeldt.github.io/progressbar.js/examples/minimal/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/minimal)
+* [**File upload**](https://kimmobrunfeldt.github.io/progressbar.js/examples/upload/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/upload)
+* [**Telegram**](https://kimmobrunfeldt.github.io/progressbar.js/examples/telegram/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/telegram)
+* [**Password strength**](https://kimmobrunfeldt.github.io/progressbar.js/examples/password-strength/) [*see code*](https://github.com/kimmobrunfeldt/progressbar.js/tree/gh-pages/examples/password-strength)
 
 # Contributing
 
@@ -633,4 +633,4 @@ See [documentation for contributors](CONTRIBUTING.md).
 
 # Thanks
 
-This project is a grateful recipient of the [Futurice Open Source sponsorship program](http://futurice.com/blog/sponsoring-free-time-open-source-activities?utm_source=github&utm_medium=spice&utm_campaign=progressbar).
+This project is a grateful recipient of the [Futurice Open Source sponsorship program](https://futurice.com/blog/sponsoring-free-time-open-source-activities?utm_source=github&utm_medium=spice&utm_campaign=progressbar).

@@ -1,4 +1,4 @@
-# WOW.js [![Build Status](https://secure.travis-ci.org/matthieua/WOW.svg?branch=master)](http://travis-ci.org/matthieua/WOW)
+# WOW.js [![Build Status](https://secure.travis-ci.org/matthieua/WOW.svg?branch=master)](https://travis-ci.org/matthieua/WOW)
 
 Reveal CSS animation as you scroll down a page.
 By default, you can use it to trigger [animate.css](https://github.com/daneden/animate.css) animations.
@@ -12,13 +12,13 @@ Advantages:
 
 Follow [@mattaussaguel](//twitter.com/mattaussaguel) for updates as WOW evolves.
 
-### [LIVE DEMO ➫](http://mynameismatthieu.com/WOW/)
+### [LIVE DEMO ➫](https://mynameismatthieu.com/WOW/)
 
 ## Live examples
-- [MaterialUp](http://www.materialup.com)
+- [MaterialUp](https://www.materialup.com)
 - [Fliplingo](https://www.fliplingo.com)
-- [Streamline Icons](http://www.streamlineicons.com)
-- [Microsoft Stories](http://www.microsoft.com/en-us/news/stories/garage/)
+- [Streamline Icons](https://www.streamlineicons.com)
+- [Microsoft Stories](https://www.microsoft.com/en-us/news/stories/garage/)
 
 
 ## Version
@@ -28,7 +28,7 @@ Follow [@mattaussaguel](//twitter.com/mattaussaguel) for updates as WOW evolves.
 ## Documentation
 
 It just take seconds to install and use WOW.js!
-[Read the documentation ➫](http://mynameismatthieu.com/WOW/docs.html)
+[Read the documentation ➫](https://mynameismatthieu.com/WOW/docs.html)
 
 ### Dependencies
 - [animate.css](https://github.com/daneden/animate.css)
@@ -114,7 +114,7 @@ If you find a bug, please report it [here on Github](https://github.com/matthieu
 
 ## Developer
 
-Developed by Matthieu Aussaguel, [mynameismatthieu.com](http://mynameismatthieu.com)
+Developed by Matthieu Aussaguel, [mynameismatthieu.com](https://mynameismatthieu.com)
 
 + [@mattaussaguel](//twitter.com/mattaussaguel)
 + [Github Profile](//github.com/matthieua)

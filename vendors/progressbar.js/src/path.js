@@ -67,7 +67,7 @@ Path.prototype.stop = function stop() {
 };
 
 // Method introduced here:
-// http://jakearchibald.com/2013/animated-line-drawing-svg/
+// https://jakearchibald.com/2013/animated-line-drawing-svg/
 Path.prototype.animate = function animate(progress, opts, cb) {
     opts = opts || {};
 

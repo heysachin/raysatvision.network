@@ -12,12 +12,12 @@ Props to [dperini/ContentLoaded](https://github.com/dperini/ContentLoaded) for o
 
 ## Install
 
-Install with [Bower](http://bower.io) `bower install doc-ready`
+Install with [Bower](https://bower.io) `bower install doc-ready`
 
 Install with npm `npm install doc-ready`
 
-Install with [Component](http://github.com/component/component) `component install desandro/doc-ready`
+Install with [Component](https://github.com/component/component) `component install desandro/doc-ready`
 
 ## MIT License
 
-docReady is released under the [MIT license](http://desandro.mit-license.org).
+docReady is released under the [MIT license](https://desandro.mit-license.org).

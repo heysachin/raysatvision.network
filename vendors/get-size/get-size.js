@@ -98,7 +98,7 @@ function setup() {
         if ( !style ) {
           logError( 'Style returned ' + style +
             '. Are you running this code in a hidden iframe on Firefox? ' +
-            'See http://bit.ly/getsizebug1' );
+            'See https://bit.ly/getsizebug1' );
         }
         return style;
       };

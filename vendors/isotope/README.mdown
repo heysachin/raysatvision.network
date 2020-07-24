@@ -2,7 +2,7 @@
 
 _Filter & sort magical layouts_
 
-See [isotope.metafizzy.co](http://isotope.metafizzy.co) for complete docs and demos.
+See [isotope.metafizzy.co](https://isotope.metafizzy.co) for complete docs and demos.
 
 ## Install
 
@@ -31,13 +31,13 @@ npm: `npm install isotope-layout --save`
 
 ### Commerical license
 
-If you want to use Isotope to develop commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Purchase a Isotope Commercial License at [isotope.metafizzy.co](http://isotope.metafizzy.co/#commerical-license)
+If you want to use Isotope to develop commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Purchase a Isotope Commercial License at [isotope.metafizzy.co](https://isotope.metafizzy.co/#commerical-license)
 
 ### Open source license
 
 If you are creating an open source application under a license compatible with the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html), you may use Isotope under the terms of the GPLv3.
 
-[Read more about Isotope's license](http://isotope.metafizzy.co/license.html).
+[Read more about Isotope's license](https://isotope.metafizzy.co/license.html).
 
 ## Initialize
 
@@ -88,4 +88,4 @@ Add a class of `js-isotope` to your element. Options can be set in JSON in `data
 
 * * *
 
-By [Metafizzy](http://metafizzy.co)
+By [Metafizzy](https://metafizzy.co)

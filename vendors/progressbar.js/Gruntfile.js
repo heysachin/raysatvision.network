@@ -137,7 +137,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['shell:testem']);
 
   // Run multiple tests serially, but continue if one of them fails.
-  // Adapted from http://stackoverflow.com/questions/16487681/gruntfile-getting-error-codes-from-programs-serially
+  // Adapted from https://stackoverflow.com/questions/16487681/gruntfile-getting-error-codes-from-programs-serially
   grunt.registerTask('sauce', function() {
       var done = this.async();
       var tasks = {};

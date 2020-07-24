@@ -6,7 +6,7 @@
  Version 1.44.20131215 (Previous rev: 1.44.20131208)
  Copyright (c) 2007, Scott Schiller. All rights reserved.
  Code provided under the BSD License
- http://schillmania.com/projects/snowstorm/license.txt
+ https://schillmania.com/projects/snowstorm/license.txt
 */
 var snowStorm=function(g,f){function k(a,d){isNaN(d)&&(d=0);return Math.random()*a+d}function x(){g.setTimeout(function(){a.start(!0)},20);a.events.remove(m?f:g,"mousemove",x)}function y(){(!a.excludeMobile||!D)&&x();a.events.remove(g,"load",y)}this.excludeMobile=this.autoStart=!0;this.flakesMax=128;this.flakesMaxActive=64;this.animationInterval=33;this.useGPU=!0;this.className=null;this.excludeMobile=!0;this.flakeBottom=null;this.followMouse=!0;this.snowColor="#fff";this.snowCharacter="&bull;";this.snowStick=
 !0;this.targetElement=null;this.useMeltEffect=!0;this.usePixelPosition=this.usePositionFixed=this.useTwinkleEffect=!1;this.freezeOnBlur=!0;this.flakeRightOffset=this.flakeLeftOffset=0;this.flakeHeight=this.flakeWidth=8;this.vMaxX=5;this.vMaxY=4;this.zIndex=0;var a=this,q,m=navigator.userAgent.match(/msie/i),E=navigator.userAgent.match(/msie 6/i),D=navigator.userAgent.match(/mobile|opera m(ob|in)/i),r=m&&"BackCompat"===f.compatMode||E,h=null,n=null,l=null,p=null,s=null,z=null,A=null,v=1,t=!1,w=!1,

@@ -16,7 +16,7 @@ Tested in IE8, IE9 and good browsers.
 
 ## Install
 
-Install with [Bower](http://bower.io): `bower install get-size`
+Install with [Bower](https://bower.io): `bower install get-size`
 
 Install with npm: `npm install get-size`
 
@@ -38,4 +38,4 @@ For percentage or `em`-based sizes, IE8 does not support fractional values. getS
 
 ## MIT License
 
-getSize is released under the [MIT License](http://desandro.mit-license.org/).
+getSize is released under the [MIT License](https://desandro.mit-license.org/).

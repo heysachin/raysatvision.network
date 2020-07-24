@@ -2,7 +2,7 @@
 
 <p class="tagline">JavaScript is all like "You images done yet or what?"</p>
 
-[imagesloaded.desandro.com](http://imagesloaded.desandro.com)
+[imagesloaded.desandro.com](https://imagesloaded.desandro.com)
 
 Detect when images have been loaded.
 
@@ -12,10 +12,10 @@ Detect when images have been loaded.
 
 Get a packaged source file:
 
-+ [imagesloaded.pkgd.min.js](http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js)
-+ [imagesloaded.pkgd.js](http://imagesloaded.desandro.com/imagesloaded.pkgd.js)
++ [imagesloaded.pkgd.min.js](https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js)
++ [imagesloaded.pkgd.js](https://imagesloaded.desandro.com/imagesloaded.pkgd.js)
 
-Or install via [Bower](http://bower.io):
+Or install via [Bower](https://bower.io):
 
 ``` bash
 bower install imagesloaded
@@ -153,7 +153,7 @@ $('#container').imagesLoaded( function() {
 
 ### jQuery Deferred
 
-The jQuery plugin returns a [jQuery Deferred object](http://api.jquery.com/category/deferred-object/). This allows you to use `.always()`, `.done()`, `.fail()` and `.progress()`, similarly to the emitted events.
+The jQuery plugin returns a [jQuery Deferred object](https://api.jquery.com/category/deferred-object/). This allows you to use `.always()`, `.done()`, `.fail()` and `.progress()`, similarly to the emitted events.
 
 ``` js
 $('#container').imagesLoaded()
@@ -174,9 +174,9 @@ $('#container').imagesLoaded()
 
 ## RequireJS
 
-imagesLoaded works with [RequireJS](http://requirejs.org).
+imagesLoaded works with [RequireJS](https://requirejs.org).
 
-You can require [imagesloaded.pkgd.js](http://imagesloaded.desandro.com/imagesloaded.pkgd.js).
+You can require [imagesloaded.pkgd.js](https://imagesloaded.desandro.com/imagesloaded.pkgd.js).
 
 ``` js
 requirejs( [
@@ -186,7 +186,7 @@ requirejs( [
 });
 ```
 
-Or, you can manage dependencies with [Bower](http://bower.io). Set `baseUrl` to `bower_components` and set a path config for all your application code.
+Or, you can manage dependencies with [Bower](https://bower.io). Set `baseUrl` to `bower_components` and set a path config for all your application code.
 
 ``` js
 requirejs.config({
@@ -206,8 +206,8 @@ requirejs( [
 
 ## Contributors
 
-This project has a [storied legacy](https://github.com/desandro/imagesloaded/graphs/contributors). Its current incarnation was developed by [Tomas Sardyha @Darsain](http://darsa.in/) and [David DeSandro @desandro](http://desandro.com).
+This project has a [storied legacy](https://github.com/desandro/imagesloaded/graphs/contributors). Its current incarnation was developed by [Tomas Sardyha @Darsain](https://darsa.in/) and [David DeSandro @desandro](https://desandro.com).
 
 ## MIT License
 
-imagesLoaded is released under the [MIT License](http://desandro.mit-license.org/). Have at it.
+imagesLoaded is released under the [MIT License](https://desandro.mit-license.org/). Have at it.

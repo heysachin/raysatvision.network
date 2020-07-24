@@ -1,11 +1,11 @@
 # Opening an Issue
 
-The GitHub issue tracker is exclusively for opening demonstrable bugs with the library or for discussing/implementing enhancements. If you need general help with Waypoints try searching through existing closed tickets, searching through the [#jquery-waypoints](http://stackoverflow.com/questions/tagged/jquery-waypoints) tag on StackOverflow, or asking your question there using that tag. If you do ask a question on StackOverflow, please follow the guidelines for [asking a good question](http://stackoverflow.com/help/how-to-ask).
+The GitHub issue tracker is exclusively for opening demonstrable bugs with the library or for discussing/implementing enhancements. If you need general help with Waypoints try searching through existing closed tickets, searching through the [#jquery-waypoints](https://stackoverflow.com/questions/tagged/jquery-waypoints) tag on StackOverflow, or asking your question there using that tag. If you do ask a question on StackOverflow, please follow the guidelines for [asking a good question](https://stackoverflow.com/help/how-to-ask).
 
 If you're opening a ticket for a bug:
 
 - Give a clear explanation of the bug.
-- Try to provide a link to a [JSFiddle](http://jsfiddle.net/) or [CodePen](http://codepen.io/) or similar reduced test case.
+- Try to provide a link to a [JSFiddle](https://jsfiddle.net/) or [CodePen](https://codepen.io/) or similar reduced test case.
 - If you cannot provide a reduced test case, please provide a link to a live site demonstrating your bug and include in the ticket the relevant Waypoints code.
 
 If you're interested in discussing a possible new feature:
@@ -22,9 +22,9 @@ If you're interested in discussing a possible new feature:
 
 # Tests
 
-Tests are written in [Jasmine](http://jasmine.github.io/) and run through the [testem](https://github.com/airportyh/testem) test runner. To run them locally you'll need to:
+Tests are written in [Jasmine](https://jasmine.github.io/) and run through the [testem](https://github.com/airportyh/testem) test runner. To run them locally you'll need to:
 
-- Install, if you haven't already: [PhantomJS](http://phantomjs.org/), node, and [Bower](bower.io).
+- Install, if you haven't already: [PhantomJS](https://phantomjs.org/), node, and [Bower](bower.io).
 - `npm install`
 - `bower install`
 

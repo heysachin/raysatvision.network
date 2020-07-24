@@ -1,10 +1,10 @@
-[![Build Status](https://secure.travis-ci.org/markdalgleish/stellar.js.png)](http://travis-ci.org/markdalgleish/stellar.js)
+[![Build Status](https://secure.travis-ci.org/markdalgleish/stellar.js.png)](https://travis-ci.org/markdalgleish/stellar.js)
 
-# [Stellar.js](http://markdalgleish.com/projects/stellar.js/) [![endorse](http://api.coderwall.com/markdalgleish/endorsecount.png)](http://coderwall.com/markdalgleish)
+# [Stellar.js](https://markdalgleish.com/projects/stellar.js/) [![endorse](https://api.coderwall.com/markdalgleish/endorsecount.png)](https://coderwall.com/markdalgleish)
 
 ### Parallax scrolling made easy
 
-Full guide and demonstrations available at the [official Stellar.js project page](http://markdalgleish.com/projects/stellar.js/).
+Full guide and demonstrations available at the [official Stellar.js project page](https://markdalgleish.com/projects/stellar.js/).
 
 ## Download
 
@@ -31,7 +31,7 @@ This will look for any parallax backgrounds or elements within the specified ele
 
 ## Mobile Support
 
-Support in Mobile WebKit browsers requires a touch scrolling library, and a slightly tweaked configuration. For a full walkthrough on how to implement this correctly, read my blog post ["Mobile Parallax with Stellar.js"](http://markdalgleish.com/2012/10/mobile-parallax-with-stellar-js).
+Support in Mobile WebKit browsers requires a touch scrolling library, and a slightly tweaked configuration. For a full walkthrough on how to implement this correctly, read my blog post ["Mobile Parallax with Stellar.js"](https://markdalgleish.com/2012/10/mobile-parallax-with-stellar-js).
 
 Please note that parallax backgrounds are not recommended in Mobile WebKit due to performance constraints. Instead, use parallax elements with static backgrounds.
 
@@ -63,7 +63,7 @@ Stellar.js' most powerful feature is the way it aligns elements.
 
 All elements will return to their original positioning when their offset parent meets the edge of the screen—plus or minus your own optional offset. This allows you to create intricate parallax patterns very easily.
 
-Confused? [See how offsets are used on the Stellar.js home page.](http://markdalgleish.com/projects/stellar.js/#show-offsets)
+Confused? [See how offsets are used on the Stellar.js home page.](https://markdalgleish.com/projects/stellar.js/#show-offsets)
 
 To modify the offsets for all elements at once, pass in the options:
 
@@ -104,9 +104,9 @@ The offset parent can also have its own offsets:
 
 Similar to CSS, the rules take precedence from element, to offset parent, to JavaScript options.
 
-Confused? [See how offset parents are used on the Stellar.js home page.](http://markdalgleish.com/projects/stellar.js/#show-offset-parents)
+Confused? [See how offset parents are used on the Stellar.js home page.](https://markdalgleish.com/projects/stellar.js/#show-offset-parents)
 
-Still confused? [See what it looks like with its default offset parents.](http://markdalgleish.com/projects/stellar.js/#show-offset-parents-default) Notice how the alignment happens on a per-letter basis? That's because each letter's containing div is its default offset parent.
+Still confused? [See what it looks like with its default offset parents.](https://markdalgleish.com/projects/stellar.js/#show-offset-parents-default) Notice how the alignment happens on a per-letter basis? That's because each letter's containing div is its default offset parent.
 
 By specifying the h2 element as the offset parent, we can ensure that the alignment of all the stars in a heading is based on the h2 and not the div further down the DOM tree.
 
@@ -120,7 +120,7 @@ $('#gallery').stellar({
 });
 ```
 
-This option is what allows you to run [Stellar.js on iOS](http://markdalgleish.com/projects/stellar.js/demos/ios.html).
+This option is what allows you to run [Stellar.js on iOS](https://markdalgleish.com/projects/stellar.js/demos/ios.html).
 
 You can even define how the elements are repositioned, whether it's through standard top and left properties or using CSS3 transforms:
 
@@ -246,13 +246,13 @@ $.stellar({
 
 Stellar.js can be installed with the following tools.
 
-### [Yeoman](http://yeoman.io/)
+### [Yeoman](https://yeoman.io/)
 
 ``` bash
 $ yeoman install jquery.stellar
 ```
 
-### [Bower](http://twitter.github.com/bower/)
+### [Bower](https://twitter.github.com/bower/)
 
 ``` bash
 $ bower install jquery.stellar
@@ -260,23 +260,23 @@ $ bower install jquery.stellar
 
 ## Sites Using Stellar.js
 
-* [Magic City](http://mc.starz.com)
-* [National Geographic - Alien Deep Interactive](http://channel.nationalgeographic.com/channel/alien-deep/interactives/alien-deep-interactive)
-* [François Hollande](http://www.parti-socialiste.fr/latimelineduchangement)
-* [Brabus Private Aviation](http://www.brabus-aviation.com/)
-* [IT Support London](http://www.itsupportlondon.com)
-* [Ashford University](http://bright.ashford.edu)
-* [WS Interactive](http://www.ws-interactive.fr/methode)
-* [Moire Mag - Untitled](http://www.moiremag.net/untitled)
-* [Carnival of Courage](http://www.carnivalofcourage.com.au)
-* [Ian Poulter](http://www.ianpoulter.com)
-* [360 Strategy Group](http://360strategygroup.com)
+* [Magic City](https://mc.starz.com)
+* [National Geographic - Alien Deep Interactive](https://channel.nationalgeographic.com/channel/alien-deep/interactives/alien-deep-interactive)
+* [François Hollande](https://www.parti-socialiste.fr/latimelineduchangement)
+* [Brabus Private Aviation](https://www.brabus-aviation.com/)
+* [IT Support London](https://www.itsupportlondon.com)
+* [Ashford University](https://bright.ashford.edu)
+* [WS Interactive](https://www.ws-interactive.fr/methode)
+* [Moire Mag - Untitled](https://www.moiremag.net/untitled)
+* [Carnival of Courage](https://www.carnivalofcourage.com.au)
+* [Ian Poulter](https://www.ianpoulter.com)
+* [360 Strategy Group](https://360strategygroup.com)
 
-I'm sure there are heaps more. [Let me know if you'd like me to feature your site here.](http://twitter.com/markdalgleish)
+I'm sure there are heaps more. [Let me know if you'd like me to feature your site here.](https://twitter.com/markdalgleish)
 
 ## How to Build
 
-Stellar.js uses [Node.js](nodejs.org), [Grunt](http://gruntjs.com) and [PhantomJS](http://phantomjs.org/).
+Stellar.js uses [Node.js](nodejs.org), [Grunt](https://gruntjs.com) and [PhantomJS](https://phantomjs.org/).
 
 Once you've got Node and PhantomJS set up, install the dependencies:
 
@@ -304,10 +304,10 @@ If you want to contribute in a way that changes the API, please file an issue be
 
 ## Questions?
 
-Contact me on GitHub or Twitter: [@markdalgleish](http://twitter.com/markdalgleish)
+Contact me on GitHub or Twitter: [@markdalgleish](https://twitter.com/markdalgleish)
 
 ## License
 
 Copyright 2013, Mark Dalgleish  
 This content is released under the MIT license  
-http://markdalgleish.mit-license.org
+https://markdalgleish.mit-license.org

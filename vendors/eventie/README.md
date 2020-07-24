@@ -18,7 +18,7 @@ eventie.unbind( elem, 'click', onElemClick );
 
 Download [eventie.js](eventie.js)
 
-Install with [Bower :bird:](http://bower.io) `bower install eventie`
+Install with [Bower :bird:](https://bower.io) `bower install eventie`
 
 Install with npm :truck: `npm install eventie`
 
@@ -30,4 +30,4 @@ eventie add support for `event.target` and [`.handleEvent` method](https://devel
 
 ## MIT license
 
-eventie is released under the [MIT license](http://desandro.mit-license.org).
+eventie is released under the [MIT license](https://desandro.mit-license.org).

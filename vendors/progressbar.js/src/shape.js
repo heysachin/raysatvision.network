@@ -167,7 +167,7 @@ Shape.prototype.setText = function setText(text) {
 };
 
 Shape.prototype._createSvgView = function _createSvgView(opts) {
-    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    var svg = document.createElementNS('https://www.w3.org/2000/svg', 'svg');
     this._initializeSvg(svg, opts);
 
     var trailPath = null;
@@ -223,7 +223,7 @@ Shape.prototype._createTrail = function _createTrail(opts) {
 };
 
 Shape.prototype._createPathElement = function _createPathElement(pathString, opts) {
-    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    var path = document.createElementNS('https://www.w3.org/2000/svg', 'path');
     path.setAttribute('d', pathString);
     path.setAttribute('stroke', opts.color);
     path.setAttribute('stroke-width', opts.strokeWidth);

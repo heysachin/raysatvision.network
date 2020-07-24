@@ -5,10 +5,10 @@
   "authors": [
     {
       "name": "Stephan Groß",
-      "homepage": "http://www.minddust.com"
+      "homepage": "https://www.minddust.com"
     }
   ],
-  "homepage": "http://www.minddust.com/project/bootstrap-progressbar/",
+  "homepage": "https://www.minddust.com/project/bootstrap-progressbar/",
   "repository": {
     "type": "git",
     "url": "https://github.com/minddust/bootstrap-progressbar.git"

@@ -3,7 +3,7 @@
 // License: MIT
 
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.ProgressBar = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-/*! shifty - v1.5.0 - 2017-05-31 - http://jeremyckahn.github.io/shifty */
+/*! shifty - v1.5.0 - 2017-05-31 - https://jeremyckahn.github.io/shifty */
 ;(function () {
   var root = this;
 
@@ -33,7 +33,7 @@ var Tweenable = (function () {
 
   if (typeof window !== 'undefined') {
     // requestAnimationFrame() shim by Paul Irish (modified for Shifty)
-    // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+    // https://paulirish.com/2011/requestanimationframe-for-smart-animating/
     DEFAULT_SCHEDULE_FUNCTION = window.requestAnimationFrame
        || window.webkitRequestAnimationFrame
        || window.oRequestAnimationFrame
@@ -612,8 +612,8 @@ var Tweenable = (function () {
  * [Scripty2](https://github.com/madrobby/scripty2/blob/master/src/effects/transitions/penner.js).
  *
  * Based on Easing Equations (c) 2003 [Robert
- * Penner](http://www.robertpenner.com/), all rights reserved. This work is
- * [subject to terms](http://www.robertpenner.com/easing_terms_of_use.html).
+ * Penner](https://www.robertpenner.com/), all rights reserved. This work is
+ * [subject to terms](https://www.robertpenner.com/easing_terms_of_use.html).
  */
 
 /*!
@@ -814,7 +814,7 @@ var Tweenable = (function () {
  * The Bezier magic in this file is adapted/copied almost wholesale from
  * [Scripty2](https://github.com/madrobby/scripty2/blob/master/src/effects/transitions/cubic-bezier.js),
  * which was adapted from Apple code (which probably came from
- * [here](http://opensource.apple.com/source/WebCore/WebCore-955.66/platform/graphics/UnitBezier.h)).
+ * [here](https://opensource.apple.com/source/WebCore/WebCore-955.66/platform/graphics/UnitBezier.h)).
  * Special thanks to Apple and Thomas Fuchs for much of this code.
  */
 
@@ -848,7 +848,7 @@ var Tweenable = (function () {
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 ;(function () {
-  // port of webkit cubic bezier handling by http://www.netzgesta.de/dev/
+  // port of webkit cubic bezier handling by https://www.netzgesta.de/dev/
   function cubicBezierAtTime(t,p1x,p1y,p2x,p2y,duration) {
     var ax = 0,bx = 0,cx = 0,ay = 0,by = 0,cy = 0;
     function sampleCurveX(t) {
@@ -925,7 +925,7 @@ var Tweenable = (function () {
    *  CSS property.
    *
    *  The W3C has more information about CSS3 transition timing functions:
-   *  http://www.w3.org/TR/css3-transitions/#transition-timing-function_tag
+   *  https://www.w3.org/TR/css3-transitions/#transition-timing-function_tag
    *
    *  @param {number} x1
    *  @param {number} y1
@@ -944,7 +944,7 @@ var Tweenable = (function () {
    * Create a Bezier easing function and attach it to `{{#crossLink
    * "Tweenable/formula:property"}}Tweenable#formula{{/crossLink}}`.  This
    * function gives you total control over the easing curve.  Matthew Lein's
-   * [Ceaser](http://matthewlein.com/ceaser/) is a useful tool for visualizing
+   * [Ceaser](https://matthewlein.com/ceaser/) is a useful tool for visualizing
    * the curves you can make with this function.
    * @method setBezierFunction
    * @param {string} name The name of the easing curve.  Overwrites the old
@@ -1630,7 +1630,7 @@ var utils = require('./utils');
 
 var Circle = function Circle(container, options) {
     // Use two arcs to form a circle
-    // See this answer http://stackoverflow.com/a/10477334/1446092
+    // See this answer https://stackoverflow.com/a/10477334/1446092
     this._pathTemplate =
         'M 50,50 m 0,-{radius}' +
         ' a {radius},{radius} 0 1 1 0,{2radius}' +
@@ -1782,7 +1782,7 @@ Path.prototype.stop = function stop() {
 };
 
 // Method introduced here:
-// http://jakearchibald.com/2013/animated-line-drawing-svg/
+// https://jakearchibald.com/2013/animated-line-drawing-svg/
 Path.prototype.animate = function animate(progress, opts, cb) {
     opts = opts || {};
 
@@ -1891,7 +1891,7 @@ var utils = require('./utils');
 
 var SemiCircle = function SemiCircle(container, options) {
     // Use one arc to form a SemiCircle
-    // See this answer http://stackoverflow.com/a/10477334/1446092
+    // See this answer https://stackoverflow.com/a/10477334/1446092
     this._pathTemplate =
         'M 50,50 m -{radius},0' +
         ' a {radius},{radius} 0 1 1 {2radius},0';
@@ -2100,7 +2100,7 @@ Shape.prototype.setText = function setText(text) {
 };
 
 Shape.prototype._createSvgView = function _createSvgView(opts) {
-    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    var svg = document.createElementNS('https://www.w3.org/2000/svg', 'svg');
     this._initializeSvg(svg, opts);
 
     var trailPath = null;
@@ -2156,7 +2156,7 @@ Shape.prototype._createTrail = function _createTrail(opts) {
 };
 
 Shape.prototype._createPathElement = function _createPathElement(pathString, opts) {
-    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    var path = document.createElementNS('https://www.w3.org/2000/svg', 'path');
     path.setAttribute('d', pathString);
     path.setAttribute('stroke', opts.color);
     path.setAttribute('stroke-width', opts.strokeWidth);

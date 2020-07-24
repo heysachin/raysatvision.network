@@ -69,17 +69,17 @@ I gave people the chance to object in issue #84, which also explains my reasonin
 
 [guide]: https://github.com/Wolfy87/EventEmitter/blob/master/docs/guide.md
 [api]: https://github.com/Olical/EventEmitter/blob/master/docs/api.md
-[simple]: http://jsfiddle.net/Wolfy87/qXQu9/
-[regexp dom caster]: http://jsfiddle.net/Wolfy87/JqRvS/
+[simple]: https://jsfiddle.net/Wolfy87/qXQu9/
+[regexp dom caster]: https://jsfiddle.net/Wolfy87/JqRvS/
 [npm]: https://npmjs.org/
-[bower]: http://bower.io/
-[component]: http://github.com/component/component
-[mocha]: http://visionmedia.github.io/mocha/
-[chai]: http://chaijs.com/
+[bower]: https://bower.io/
+[component]: https://github.com/component/component
+[mocha]: https://visionmedia.github.io/mocha/
+[chai]: https://chaijs.com/
 [issues]: https://github.com/Olical/EventEmitter/issues
 [example]: https://github.com/Olical/EventEmitter/pull/46
 [nathggns]: https://github.com/nathggns
 [http-server]: https://www.npmjs.org/package/http-server
-[node.js]: http://nodejs.org/
+[node.js]: https://nodejs.org/
 [gitter]: https://gitter.im/Olical/EventEmitter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-[unlicense]: http://unlicense.org/
+[unlicense]: https://unlicense.org/

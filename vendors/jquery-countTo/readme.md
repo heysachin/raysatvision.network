@@ -1,13 +1,13 @@
 jQuery countTo Plugin
 =====================
 [jQuery countTo](https://github.com/mhuggins/jquery-countTo) is a
-[jQuery](http://jquery.com) plugin that will count up (or down) to a target
+[jQuery](https://jquery.com) plugin that will count up (or down) to a target
 number at a specified speed, rendered within an HTML DOM element.
 
 Requirements:
 -------------
 [jQuery countTo](https://github.com/mhuggins/jquery-countTo) requires the
-latest version of [jQuery](http://jquery.com).
+latest version of [jQuery](https://jquery.com).
 
 Usage:
 ------
@@ -162,9 +162,9 @@ called by passing the name as a string to the `countTo` jQuery function, e.g.:
 
 Created By:
 -----------
-[Matt Huggins](http://matthuggins.com)
+[Matt Huggins](https://matthuggins.com)
 
 License:
 --------
 jQuery-countTo is released under the
-[MIT license](http://www.opensource.org/licenses/MIT).
+[MIT license](https://www.opensource.org/licenses/MIT).
