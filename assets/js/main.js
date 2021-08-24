@@ -120,7 +120,7 @@ jQuery(document).ready(function ($) {
                 speed: $(this).data('animation-speed') || 400,
                 dots: $(this).hasClass('control-nav'),
                 arrows: ($(this).hasClass('direction-nav') ? true : false),
-                autoplaySpeed: $(this).data('autoplay-speed') || 5000,
+                autoplaySpeed: $(this).data('autoplay-speed') || 1750,
                 adaptiveHeight: ($(this).hasClass('auto-height') ? true : false),
                 swipeToSlide: ($(this).hasClass('swipe-to-slide') ? true : false),
                 infinite: ($(this).hasClass('no-loop') ? false : true)
